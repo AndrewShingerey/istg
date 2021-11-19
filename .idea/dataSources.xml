@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="gameshop@localhost" uuid="852bfbcf-1840-42c9-80e0-e2d9f868fafd">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://localhost:5432/gameshop</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="GamesShopTest@localhost" uuid="73891f79-939a-4849-bc9c-4256f2dcf183">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://localhost:5432/GamesShopTest</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="TableGames@localhost" uuid="b34c7891-cbfa-48f7-88bb-cf41f5d7b911">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://localhost:5432/TableGames</jdbc-url>
+    </data-source>
+  </component>
+</project>
