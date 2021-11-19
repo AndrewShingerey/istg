@@ -7,7 +7,6 @@
     <groupId>org.example</groupId>
     <artifactId>ShopInternetTableGame</artifactId>
     <version>1.0-SNAPSHOT</version>
-
     <packaging>war</packaging>
 
     <name>spring-app1 Maven Webapp</name>
