@@ -20,9 +20,9 @@ public class AppConfig extends WebMvcConfigurerAdapter {
     @Bean
     public DataSource getDataSource() {
         DriverManagerDataSource dataSource = new DriverManagerDataSource();
-        dataSource.setUrl("jdbc:postgresql://ec2-54-195-195-81.eu-west-1.compute.amazonaws.com:5432/d9i69tcca9157l");
-        dataSource.setUsername("fsllsyiimakfjp");
-        dataSource.setPassword("76a5ed592286547acd238b38e3c604a4b69f8d4bec9eee6eae367e85a39f7f6f");
+        dataSource.setUrl("postgres://zcvfirvsnqdlev:40951b823a2b7c462939cddcdd798d50e1216730acf30346ef2d842331a2c9ad@ec2-34-250-16-127.eu-west-1.compute.amazonaws.com:5432/do71815h64jo0");
+        dataSource.setUsername("zcvfirvsnqdlev");
+        dataSource.setPassword("40951b823a2b7c462939cddcdd798d50e1216730acf30346ef2d842331a2c9ad");
         dataSource.setDriverClassName("org.postgresql.Driver");
         return dataSource;
     }
