@@ -1,1 +1,1 @@
-web: java -jar target/ShopInternetTableGame-1.0-SNAPSHOT.jar
+web:    java $JAVA_OPTS -jar target/dependency/webapp-runner-8.0.30.1.jar --target/istgbntu
