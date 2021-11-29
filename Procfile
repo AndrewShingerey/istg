@@ -1,1 +1,1 @@
-web: java -Dspring.profiles.active=prod -Dserver.port=$PORT $JAVA_OPTS -jar target/*.jar
+web: java -jar target/ShopInternetTableGame-1.0-SNAPSHOT.jar
