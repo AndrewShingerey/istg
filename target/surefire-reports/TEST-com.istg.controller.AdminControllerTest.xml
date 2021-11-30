@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.istg.controller.AdminControllerTest" time="5.234" tests="22" errors="1" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.istg.controller.AdminControllerTest" time="5.278" tests="22" errors="1" skipped="0" failures="0">
   <properties>
     <property name="idea.version" value="2021.1.3"/>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
@@ -43,7 +43,7 @@
     <property name="java.class.path" value="D:\IID\IntelliJ IDEA 2021.1\plugins\maven\lib\maven3\boot\plexus-classworlds-2.6.0.jar;D:\IID\IntelliJ IDEA 2021.1\plugins\maven\lib\maven3\boot\plexus-classworlds.license"/>
     <property name="java.vm.specification.version" value="15"/>
     <property name="sun.arch.data.model" value="64"/>
-    <property name="sun.java.command" value="org.codehaus.classworlds.Launcher -Didea.version=2021.1.3 --update-snapshots clean install"/>
+    <property name="sun.java.command" value="org.codehaus.classworlds.Launcher -Didea.version=2021.1.3 --update-snapshots clean package"/>
     <property name="java.home" value="C:\Users\Admin\.jdks\openjdk-15.0.1"/>
     <property name="user.language" value="ru"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
@@ -58,11 +58,11 @@
     <property name="sun.cpu.endian" value="little"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="AdminPanelListCheckoutOrderDelete" classname="com.istg.controller.AdminControllerTest" time="0.121"/>
-  <testcase name="AdminPanelListCheckoutOrderCountNode" classname="com.istg.controller.AdminControllerTest" time="0.167"/>
+  <testcase name="AdminPanelListCheckoutOrderDelete" classname="com.istg.controller.AdminControllerTest" time="0.115"/>
+  <testcase name="AdminPanelListCheckoutOrderCountNode" classname="com.istg.controller.AdminControllerTest" time="0.202"/>
   <testcase name="AdminPanelDeleteGame" classname="com.istg.controller.AdminControllerTest" time="0.009"/>
-  <testcase name="homeAdminPageCountLink" classname="com.istg.controller.AdminControllerTest" time="0.037"/>
-  <testcase name="AdminPanelListCardUser" classname="com.istg.controller.AdminControllerTest" time="0.103">
+  <testcase name="homeAdminPageCountLink" classname="com.istg.controller.AdminControllerTest" time="0.038"/>
+  <testcase name="AdminPanelListCardUser" classname="com.istg.controller.AdminControllerTest" time="0.124">
     <error message="Request processing failed; nested exception is org.springframework.jdbc.CannotGetJdbcConnectionException: Could not get JDBC Connection; nested exception is java.sql.SQLException: No suitable driver found for postgres://vjxcwkiilteanj:e2d9316253c0eb936edd3d5d85eddc3eca429e1f39629913a96f2875bcbe4c9e@ec2-3-248-87-6.eu-west-1.compute.amazonaws.com:5432/d1bvs7c11s3o58" type="org.springframework.web.util.NestedServletException">org.springframework.web.util.NestedServletException: Request processing failed; nested exception is org.springframework.jdbc.CannotGetJdbcConnectionException: Could not get JDBC Connection; nested exception is java.sql.SQLException: No suitable driver found for postgres://vjxcwkiilteanj:e2d9316253c0eb936edd3d5d85eddc3eca429e1f39629913a96f2875bcbe4c9e@ec2-3-248-87-6.eu-west-1.compute.amazonaws.com:5432/d1bvs7c11s3o58
 	at com.istg.controller.AdminControllerTest.AdminPanelListCardUser(AdminControllerTest.java:226)
 Caused by: org.springframework.jdbc.CannotGetJdbcConnectionException: Could not get JDBC Connection; nested exception is java.sql.SQLException: No suitable driver found for postgres://vjxcwkiilteanj:e2d9316253c0eb936edd3d5d85eddc3eca429e1f39629913a96f2875bcbe4c9e@ec2-3-248-87-6.eu-west-1.compute.amazonaws.com:5432/d1bvs7c11s3o58
@@ -70,7 +70,7 @@ Caused by: org.springframework.jdbc.CannotGetJdbcConnectionException: Could not 
 Caused by: java.sql.SQLException: No suitable driver found for postgres://vjxcwkiilteanj:e2d9316253c0eb936edd3d5d85eddc3eca429e1f39629913a96f2875bcbe4c9e@ec2-3-248-87-6.eu-west-1.compute.amazonaws.com:5432/d1bvs7c11s3o58
 	at com.istg.controller.AdminControllerTest.AdminPanelListCardUser(AdminControllerTest.java:226)
 </error>
-    <system-out><![CDATA[2021-11-30 21:13:45.260  INFO 19348 --- [           main] c.i.d.i.CardProductDaoImpl               : Get all card users 2021-11-30
+    <system-out><![CDATA[2021-11-30 21:38:34.583  INFO 4700 --- [           main] c.i.d.i.CardProductDaoImpl               : Get all card users 2021-11-30
 
 MockHttpServletRequest:
       HTTP Method = GET
@@ -473,20 +473,20 @@ MockHttpServletResponse:
 ]]></system-out>
   </testcase>
   <testcase name="AdminPanelListUserUpdateTest" classname="com.istg.controller.AdminControllerTest" time="0"/>
-  <testcase name="AdminPanelListUserLoadTest" classname="com.istg.controller.AdminControllerTest" time="0.009"/>
-  <testcase name="AdminPanelListFeedBackDelete" classname="com.istg.controller.AdminControllerTest" time="0.009"/>
-  <testcase name="AdminPanelListGameCountNode" classname="com.istg.controller.AdminControllerTest" time="0.038"/>
-  <testcase name="homeAdminPageLoad" classname="com.istg.controller.AdminControllerTest" time="0.014"/>
+  <testcase name="AdminPanelListUserLoadTest" classname="com.istg.controller.AdminControllerTest" time="0.007"/>
+  <testcase name="AdminPanelListFeedBackDelete" classname="com.istg.controller.AdminControllerTest" time="0.011"/>
+  <testcase name="AdminPanelListGameCountNode" classname="com.istg.controller.AdminControllerTest" time="0.036"/>
+  <testcase name="homeAdminPageLoad" classname="com.istg.controller.AdminControllerTest" time="0.015"/>
   <testcase name="AdminPanelAddGameFailed" classname="com.istg.controller.AdminControllerTest" time="0.013"/>
-  <testcase name="AdminPanelEditGame" classname="com.istg.controller.AdminControllerTest" time="0.01"/>
-  <testcase name="AdminPanelListUserCountNodeTest" classname="com.istg.controller.AdminControllerTest" time="0.014"/>
-  <testcase name="AdminPanelListCheckoutOrder" classname="com.istg.controller.AdminControllerTest" time="0.014"/>
-  <testcase name="AdminPanelListFeedBackNodeCount" classname="com.istg.controller.AdminControllerTest" time="0.03"/>
-  <testcase name="AdminPanelAddGame" classname="com.istg.controller.AdminControllerTest" time="0.01"/>
-  <testcase name="AdminPanelListContactUsDelete" classname="com.istg.controller.AdminControllerTest" time="0.01"/>
-  <testcase name="AdminPanelListContactUsCountNode" classname="com.istg.controller.AdminControllerTest" time="0.021"/>
+  <testcase name="AdminPanelEditGame" classname="com.istg.controller.AdminControllerTest" time="0.011"/>
+  <testcase name="AdminPanelListUserCountNodeTest" classname="com.istg.controller.AdminControllerTest" time="0.021"/>
+  <testcase name="AdminPanelListCheckoutOrder" classname="com.istg.controller.AdminControllerTest" time="0.013"/>
+  <testcase name="AdminPanelListFeedBackNodeCount" classname="com.istg.controller.AdminControllerTest" time="0.026"/>
+  <testcase name="AdminPanelAddGame" classname="com.istg.controller.AdminControllerTest" time="0.008"/>
+  <testcase name="AdminPanelListContactUsDelete" classname="com.istg.controller.AdminControllerTest" time="0.008"/>
+  <testcase name="AdminPanelListContactUsCountNode" classname="com.istg.controller.AdminControllerTest" time="0.018"/>
   <testcase name="AdminPanelListFeedBackLoad" classname="com.istg.controller.AdminControllerTest" time="0.012"/>
   <testcase name="AdminPanelListUserDeleteTest" classname="com.istg.controller.AdminControllerTest" time="0.008"/>
-  <testcase name="AdminPanelListGameLoad" classname="com.istg.controller.AdminControllerTest" time="0.01"/>
+  <testcase name="AdminPanelListGameLoad" classname="com.istg.controller.AdminControllerTest" time="0.011"/>
   <testcase name="AdminPanelEditGameFailed" classname="com.istg.controller.AdminControllerTest" time="0.006"/>
 </testsuite>

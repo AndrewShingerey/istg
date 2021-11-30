@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.istg.controller.HomeControllerTest" time="1.088" tests="2" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.istg.controller.HomeControllerTest" time="1.135" tests="2" errors="0" skipped="0" failures="0">
   <properties>
     <property name="idea.version" value="2021.1.3"/>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
@@ -43,7 +43,7 @@
     <property name="java.class.path" value="D:\IID\IntelliJ IDEA 2021.1\plugins\maven\lib\maven3\boot\plexus-classworlds-2.6.0.jar;D:\IID\IntelliJ IDEA 2021.1\plugins\maven\lib\maven3\boot\plexus-classworlds.license"/>
     <property name="java.vm.specification.version" value="15"/>
     <property name="sun.arch.data.model" value="64"/>
-    <property name="sun.java.command" value="org.codehaus.classworlds.Launcher -Didea.version=2021.1.3 --update-snapshots clean install"/>
+    <property name="sun.java.command" value="org.codehaus.classworlds.Launcher -Didea.version=2021.1.3 --update-snapshots clean package"/>
     <property name="java.home" value="C:\Users\Admin\.jdks\openjdk-15.0.1"/>
     <property name="user.language" value="ru"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
@@ -58,6 +58,6 @@
     <property name="sun.cpu.endian" value="little"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="HomePageCheckCountGameActive" classname="com.istg.controller.HomeControllerTest" time="0.045"/>
+  <testcase name="HomePageCheckCountGameActive" classname="com.istg.controller.HomeControllerTest" time="0.049"/>
   <testcase name="HomePageLoad" classname="com.istg.controller.HomeControllerTest" time="0.008"/>
 </testsuite>

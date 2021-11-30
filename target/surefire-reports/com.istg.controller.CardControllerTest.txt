@@ -1,33 +1,33 @@
 -------------------------------------------------------------------------------
 Test set: com.istg.controller.CardControllerTest
 -------------------------------------------------------------------------------
-Tests run: 6, Failures: 0, Errors: 6, Skipped: 0, Time elapsed: 1.593 sec <<< FAILURE! - in com.istg.controller.CardControllerTest
-orderCardFailed(com.istg.controller.CardControllerTest)  Time elapsed: 0.032 sec  <<< ERROR!
+Tests run: 6, Failures: 0, Errors: 6, Skipped: 0, Time elapsed: 1.62 sec <<< FAILURE! - in com.istg.controller.CardControllerTest
+orderCardFailed(com.istg.controller.CardControllerTest)  Time elapsed: 0.045 sec  <<< ERROR!
 java.lang.IllegalStateException: Unable to create SecurityContext using @org.springframework.security.test.context.support.WithUserDetails(value="tom", userDetailsServiceBeanName="")
 Caused by: org.springframework.jdbc.CannotGetJdbcConnectionException: Could not get JDBC Connection; nested exception is java.sql.SQLException: No suitable driver found for postgres://vjxcwkiilteanj:e2d9316253c0eb936edd3d5d85eddc3eca429e1f39629913a96f2875bcbe4c9e@ec2-3-248-87-6.eu-west-1.compute.amazonaws.com:5432/d1bvs7c11s3o58
 Caused by: java.sql.SQLException: No suitable driver found for postgres://vjxcwkiilteanj:e2d9316253c0eb936edd3d5d85eddc3eca429e1f39629913a96f2875bcbe4c9e@ec2-3-248-87-6.eu-west-1.compute.amazonaws.com:5432/d1bvs7c11s3o58
 
-loadCardForUser(com.istg.controller.CardControllerTest)  Time elapsed: 0.02 sec  <<< ERROR!
+loadCardForUser(com.istg.controller.CardControllerTest)  Time elapsed: 0.022 sec  <<< ERROR!
 java.lang.IllegalStateException: Unable to create SecurityContext using @org.springframework.security.test.context.support.WithUserDetails(value="tom", userDetailsServiceBeanName="")
 Caused by: org.springframework.jdbc.CannotGetJdbcConnectionException: Could not get JDBC Connection; nested exception is java.sql.SQLException: No suitable driver found for postgres://vjxcwkiilteanj:e2d9316253c0eb936edd3d5d85eddc3eca429e1f39629913a96f2875bcbe4c9e@ec2-3-248-87-6.eu-west-1.compute.amazonaws.com:5432/d1bvs7c11s3o58
 Caused by: java.sql.SQLException: No suitable driver found for postgres://vjxcwkiilteanj:e2d9316253c0eb936edd3d5d85eddc3eca429e1f39629913a96f2875bcbe4c9e@ec2-3-248-87-6.eu-west-1.compute.amazonaws.com:5432/d1bvs7c11s3o58
 
-addDelete(com.istg.controller.CardControllerTest)  Time elapsed: 0.021 sec  <<< ERROR!
+addDelete(com.istg.controller.CardControllerTest)  Time elapsed: 0.018 sec  <<< ERROR!
 java.lang.IllegalStateException: Unable to create SecurityContext using @org.springframework.security.test.context.support.WithUserDetails(value="tom", userDetailsServiceBeanName="")
 Caused by: org.springframework.jdbc.CannotGetJdbcConnectionException: Could not get JDBC Connection; nested exception is java.sql.SQLException: No suitable driver found for postgres://vjxcwkiilteanj:e2d9316253c0eb936edd3d5d85eddc3eca429e1f39629913a96f2875bcbe4c9e@ec2-3-248-87-6.eu-west-1.compute.amazonaws.com:5432/d1bvs7c11s3o58
 Caused by: java.sql.SQLException: No suitable driver found for postgres://vjxcwkiilteanj:e2d9316253c0eb936edd3d5d85eddc3eca429e1f39629913a96f2875bcbe4c9e@ec2-3-248-87-6.eu-west-1.compute.amazonaws.com:5432/d1bvs7c11s3o58
 
-orderCard(com.istg.controller.CardControllerTest)  Time elapsed: 0.021 sec  <<< ERROR!
+orderCard(com.istg.controller.CardControllerTest)  Time elapsed: 0.02 sec  <<< ERROR!
 java.lang.IllegalStateException: Unable to create SecurityContext using @org.springframework.security.test.context.support.WithUserDetails(value="tom", userDetailsServiceBeanName="")
 Caused by: org.springframework.jdbc.CannotGetJdbcConnectionException: Could not get JDBC Connection; nested exception is java.sql.SQLException: No suitable driver found for postgres://vjxcwkiilteanj:e2d9316253c0eb936edd3d5d85eddc3eca429e1f39629913a96f2875bcbe4c9e@ec2-3-248-87-6.eu-west-1.compute.amazonaws.com:5432/d1bvs7c11s3o58
 Caused by: java.sql.SQLException: No suitable driver found for postgres://vjxcwkiilteanj:e2d9316253c0eb936edd3d5d85eddc3eca429e1f39629913a96f2875bcbe4c9e@ec2-3-248-87-6.eu-west-1.compute.amazonaws.com:5432/d1bvs7c11s3o58
 
-loadCardForUserNodeCount(com.istg.controller.CardControllerTest)  Time elapsed: 0.019 sec  <<< ERROR!
+loadCardForUserNodeCount(com.istg.controller.CardControllerTest)  Time elapsed: 0.021 sec  <<< ERROR!
 java.lang.IllegalStateException: Unable to create SecurityContext using @org.springframework.security.test.context.support.WithUserDetails(value="tom", userDetailsServiceBeanName="")
 Caused by: org.springframework.jdbc.CannotGetJdbcConnectionException: Could not get JDBC Connection; nested exception is java.sql.SQLException: No suitable driver found for postgres://vjxcwkiilteanj:e2d9316253c0eb936edd3d5d85eddc3eca429e1f39629913a96f2875bcbe4c9e@ec2-3-248-87-6.eu-west-1.compute.amazonaws.com:5432/d1bvs7c11s3o58
 Caused by: java.sql.SQLException: No suitable driver found for postgres://vjxcwkiilteanj:e2d9316253c0eb936edd3d5d85eddc3eca429e1f39629913a96f2875bcbe4c9e@ec2-3-248-87-6.eu-west-1.compute.amazonaws.com:5432/d1bvs7c11s3o58
 
-addGametoCard(com.istg.controller.CardControllerTest)  Time elapsed: 0.022 sec  <<< ERROR!
+addGametoCard(com.istg.controller.CardControllerTest)  Time elapsed: 0.026 sec  <<< ERROR!
 java.lang.IllegalStateException: Unable to create SecurityContext using @org.springframework.security.test.context.support.WithUserDetails(value="tom", userDetailsServiceBeanName="")
 Caused by: org.springframework.jdbc.CannotGetJdbcConnectionException: Could not get JDBC Connection; nested exception is java.sql.SQLException: No suitable driver found for postgres://vjxcwkiilteanj:e2d9316253c0eb936edd3d5d85eddc3eca429e1f39629913a96f2875bcbe4c9e@ec2-3-248-87-6.eu-west-1.compute.amazonaws.com:5432/d1bvs7c11s3o58
 Caused by: java.sql.SQLException: No suitable driver found for postgres://vjxcwkiilteanj:e2d9316253c0eb936edd3d5d85eddc3eca429e1f39629913a96f2875bcbe4c9e@ec2-3-248-87-6.eu-west-1.compute.amazonaws.com:5432/d1bvs7c11s3o58
