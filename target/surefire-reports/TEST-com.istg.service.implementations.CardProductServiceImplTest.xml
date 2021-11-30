@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.istg.service.implementations.CardProductServiceImplTest" time="0.133" tests="19" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.istg.service.implementations.CardProductServiceImplTest" time="0.126" tests="19" errors="0" skipped="0" failures="0">
   <properties>
     <property name="idea.version" value="2021.1.3"/>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
@@ -58,23 +58,23 @@
     <property name="sun.cpu.endian" value="little"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="testFind_all_by_id_user" classname="com.istg.service.implementations.CardProductServiceImplTest" time="0.01"/>
-  <testcase name="testFailedDelete" classname="com.istg.service.implementations.CardProductServiceImplTest" time="0.002"/>
+  <testcase name="testFind_all_by_id_user" classname="com.istg.service.implementations.CardProductServiceImplTest" time="0.009"/>
+  <testcase name="testFailedDelete" classname="com.istg.service.implementations.CardProductServiceImplTest" time="0.001"/>
   <testcase name="testFailedCreate_card" classname="com.istg.service.implementations.CardProductServiceImplTest" time="0.001"/>
   <testcase name="testFailedUpdate" classname="com.istg.service.implementations.CardProductServiceImplTest" time="0.001"/>
-  <testcase name="testCreate_card" classname="com.istg.service.implementations.CardProductServiceImplTest" time="0.002"/>
-  <testcase name="testSave" classname="com.istg.service.implementations.CardProductServiceImplTest" time="0.002"/>
-  <testcase name="testCheckExistsFailed" classname="com.istg.service.implementations.CardProductServiceImplTest" time="0.002"/>
-  <testcase name="testGetById" classname="com.istg.service.implementations.CardProductServiceImplTest" time="0.002"/>
-  <testcase name="testTestSave" classname="com.istg.service.implementations.CardProductServiceImplTest" time="0.002"/>
+  <testcase name="testCreate_card" classname="com.istg.service.implementations.CardProductServiceImplTest" time="0.001"/>
+  <testcase name="testSave" classname="com.istg.service.implementations.CardProductServiceImplTest" time="0.001"/>
+  <testcase name="testCheckExistsFailed" classname="com.istg.service.implementations.CardProductServiceImplTest" time="0.001"/>
+  <testcase name="testGetById" classname="com.istg.service.implementations.CardProductServiceImplTest" time="0.001"/>
+  <testcase name="testTestSave" classname="com.istg.service.implementations.CardProductServiceImplTest" time="0.001"/>
   <testcase name="testCheckExists" classname="com.istg.service.implementations.CardProductServiceImplTest" time="0.001"/>
   <testcase name="testFailedGetById" classname="com.istg.service.implementations.CardProductServiceImplTest" time="0.001"/>
   <testcase name="testFailedSave" classname="com.istg.service.implementations.CardProductServiceImplTest" time="0.001"/>
   <testcase name="testFailedTestSave" classname="com.istg.service.implementations.CardProductServiceImplTest" time="0.001"/>
-  <testcase name="testTestDelete" classname="com.istg.service.implementations.CardProductServiceImplTest" time="0.002"/>
-  <testcase name="testTestGetAll" classname="com.istg.service.implementations.CardProductServiceImplTest" time="0.002"/>
+  <testcase name="testTestDelete" classname="com.istg.service.implementations.CardProductServiceImplTest" time="0.001"/>
+  <testcase name="testTestGetAll" classname="com.istg.service.implementations.CardProductServiceImplTest" time="0.001"/>
   <testcase name="testDelete" classname="com.istg.service.implementations.CardProductServiceImplTest" time="0.001"/>
-  <testcase name="testGetAll" classname="com.istg.service.implementations.CardProductServiceImplTest" time="0.002"/>
+  <testcase name="testGetAll" classname="com.istg.service.implementations.CardProductServiceImplTest" time="0.001"/>
   <testcase name="testTestFailedDelete" classname="com.istg.service.implementations.CardProductServiceImplTest" time="0.001"/>
-  <testcase name="testUpdate" classname="com.istg.service.implementations.CardProductServiceImplTest" time="0.002"/>
+  <testcase name="testUpdate" classname="com.istg.service.implementations.CardProductServiceImplTest" time="0.001"/>
 </testsuite>

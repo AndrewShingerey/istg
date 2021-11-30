@@ -1,14 +1,12 @@
 -------------------------------------------------------------------------------
 Test set: com.istg.controller.AdminControllerTest
 -------------------------------------------------------------------------------
-Tests run: 22, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 4.358 sec <<< FAILURE! - in com.istg.controller.AdminControllerTest
-AdminPanelListCardUser(com.istg.controller.AdminControllerTest)  Time elapsed: 0.115 sec  <<< ERROR!
-org.springframework.web.util.NestedServletException: Request processing failed; nested exception is org.springframework.jdbc.CannotGetJdbcConnectionException: Could not get JDBC Connection; nested exception is org.postgresql.util.PSQLException: Ошибка при попытке подсоединения.
+Tests run: 22, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 4.446 sec <<< FAILURE! - in com.istg.controller.AdminControllerTest
+AdminPanelListCardUser(com.istg.controller.AdminControllerTest)  Time elapsed: 0.295 sec  <<< ERROR!
+org.springframework.web.util.NestedServletException: Request processing failed; nested exception is org.springframework.jdbc.CannotGetJdbcConnectionException: Could not get JDBC Connection; nested exception is org.postgresql.util.PSQLException: FATAL: no pg_hba.conf entry for host "185.128.200.20", user "zcvfirvsnqdlev", database "d1bvs7c11s3o58", SSL off
 	at com.istg.controller.AdminControllerTest.AdminPanelListCardUser(AdminControllerTest.java:226)
-Caused by: org.springframework.jdbc.CannotGetJdbcConnectionException: Could not get JDBC Connection; nested exception is org.postgresql.util.PSQLException: Ошибка при попытке подсоединения.
+Caused by: org.springframework.jdbc.CannotGetJdbcConnectionException: Could not get JDBC Connection; nested exception is org.postgresql.util.PSQLException: FATAL: no pg_hba.conf entry for host "185.128.200.20", user "zcvfirvsnqdlev", database "d1bvs7c11s3o58", SSL off
 	at com.istg.controller.AdminControllerTest.AdminPanelListCardUser(AdminControllerTest.java:226)
-Caused by: org.postgresql.util.PSQLException: Ошибка при попытке подсоединения.
-	at com.istg.controller.AdminControllerTest.AdminPanelListCardUser(AdminControllerTest.java:226)
-Caused by: java.net.UnknownHostException: vjxcwkiilteanj:e2d9316253c0eb936edd3d5d85eddc3eca429e1f39629913a96f2875bcbe4c9e@ec2-3-248-87-6.eu-west-1.compute.amazonaws.com
+Caused by: org.postgresql.util.PSQLException: FATAL: no pg_hba.conf entry for host "185.128.200.20", user "zcvfirvsnqdlev", database "d1bvs7c11s3o58", SSL off
 	at com.istg.controller.AdminControllerTest.AdminPanelListCardUser(AdminControllerTest.java:226)
 

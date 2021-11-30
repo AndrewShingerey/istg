@@ -1,40 +1,34 @@
 -------------------------------------------------------------------------------
 Test set: com.istg.controller.CardControllerTest
 -------------------------------------------------------------------------------
-Tests run: 6, Failures: 0, Errors: 6, Skipped: 0, Time elapsed: 1.579 sec <<< FAILURE! - in com.istg.controller.CardControllerTest
-orderCardFailed(com.istg.controller.CardControllerTest)  Time elapsed: 0.046 sec  <<< ERROR!
+Tests run: 6, Failures: 0, Errors: 6, Skipped: 0, Time elapsed: 1.899 sec <<< FAILURE! - in com.istg.controller.CardControllerTest
+orderCardFailed(com.istg.controller.CardControllerTest)  Time elapsed: 0.158 sec  <<< ERROR!
 java.lang.IllegalStateException: Unable to create SecurityContext using @org.springframework.security.test.context.support.WithUserDetails(value="tom", userDetailsServiceBeanName="")
-Caused by: org.springframework.jdbc.CannotGetJdbcConnectionException: Could not get JDBC Connection; nested exception is org.postgresql.util.PSQLException: Ошибка при попытке подсоединения.
-Caused by: org.postgresql.util.PSQLException: Ошибка при попытке подсоединения.
-Caused by: java.net.UnknownHostException: vjxcwkiilteanj:e2d9316253c0eb936edd3d5d85eddc3eca429e1f39629913a96f2875bcbe4c9e@ec2-3-248-87-6.eu-west-1.compute.amazonaws.com
+Caused by: org.springframework.jdbc.CannotGetJdbcConnectionException: Could not get JDBC Connection; nested exception is org.postgresql.util.PSQLException: FATAL: no pg_hba.conf entry for host "185.128.200.20", user "zcvfirvsnqdlev", database "d1bvs7c11s3o58", SSL off
+Caused by: org.postgresql.util.PSQLException: FATAL: no pg_hba.conf entry for host "185.128.200.20", user "zcvfirvsnqdlev", database "d1bvs7c11s3o58", SSL off
 
-loadCardForUser(com.istg.controller.CardControllerTest)  Time elapsed: 0.056 sec  <<< ERROR!
+loadCardForUser(com.istg.controller.CardControllerTest)  Time elapsed: 0.106 sec  <<< ERROR!
 java.lang.IllegalStateException: Unable to create SecurityContext using @org.springframework.security.test.context.support.WithUserDetails(value="tom", userDetailsServiceBeanName="")
-Caused by: org.springframework.jdbc.CannotGetJdbcConnectionException: Could not get JDBC Connection; nested exception is org.postgresql.util.PSQLException: Ошибка при попытке подсоединения.
-Caused by: org.postgresql.util.PSQLException: Ошибка при попытке подсоединения.
-Caused by: java.net.UnknownHostException: vjxcwkiilteanj:e2d9316253c0eb936edd3d5d85eddc3eca429e1f39629913a96f2875bcbe4c9e@ec2-3-248-87-6.eu-west-1.compute.amazonaws.com
+Caused by: org.springframework.jdbc.CannotGetJdbcConnectionException: Could not get JDBC Connection; nested exception is org.postgresql.util.PSQLException: FATAL: no pg_hba.conf entry for host "185.128.200.20", user "zcvfirvsnqdlev", database "d1bvs7c11s3o58", SSL off
+Caused by: org.postgresql.util.PSQLException: FATAL: no pg_hba.conf entry for host "185.128.200.20", user "zcvfirvsnqdlev", database "d1bvs7c11s3o58", SSL off
 
-addDelete(com.istg.controller.CardControllerTest)  Time elapsed: 0.037 sec  <<< ERROR!
+addDelete(com.istg.controller.CardControllerTest)  Time elapsed: 0.12 sec  <<< ERROR!
 java.lang.IllegalStateException: Unable to create SecurityContext using @org.springframework.security.test.context.support.WithUserDetails(value="tom", userDetailsServiceBeanName="")
-Caused by: org.springframework.jdbc.CannotGetJdbcConnectionException: Could not get JDBC Connection; nested exception is org.postgresql.util.PSQLException: Ошибка при попытке подсоединения.
-Caused by: org.postgresql.util.PSQLException: Ошибка при попытке подсоединения.
-Caused by: java.net.UnknownHostException: vjxcwkiilteanj:e2d9316253c0eb936edd3d5d85eddc3eca429e1f39629913a96f2875bcbe4c9e@ec2-3-248-87-6.eu-west-1.compute.amazonaws.com
+Caused by: org.springframework.jdbc.CannotGetJdbcConnectionException: Could not get JDBC Connection; nested exception is org.postgresql.util.PSQLException: FATAL: no pg_hba.conf entry for host "185.128.200.20", user "zcvfirvsnqdlev", database "d1bvs7c11s3o58", SSL off
+Caused by: org.postgresql.util.PSQLException: FATAL: no pg_hba.conf entry for host "185.128.200.20", user "zcvfirvsnqdlev", database "d1bvs7c11s3o58", SSL off
 
-orderCard(com.istg.controller.CardControllerTest)  Time elapsed: 0.02 sec  <<< ERROR!
+orderCard(com.istg.controller.CardControllerTest)  Time elapsed: 0.104 sec  <<< ERROR!
 java.lang.IllegalStateException: Unable to create SecurityContext using @org.springframework.security.test.context.support.WithUserDetails(value="tom", userDetailsServiceBeanName="")
-Caused by: org.springframework.jdbc.CannotGetJdbcConnectionException: Could not get JDBC Connection; nested exception is org.postgresql.util.PSQLException: Ошибка при попытке подсоединения.
-Caused by: org.postgresql.util.PSQLException: Ошибка при попытке подсоединения.
-Caused by: java.net.UnknownHostException: vjxcwkiilteanj:e2d9316253c0eb936edd3d5d85eddc3eca429e1f39629913a96f2875bcbe4c9e@ec2-3-248-87-6.eu-west-1.compute.amazonaws.com
+Caused by: org.springframework.jdbc.CannotGetJdbcConnectionException: Could not get JDBC Connection; nested exception is org.postgresql.util.PSQLException: FATAL: no pg_hba.conf entry for host "185.128.200.20", user "zcvfirvsnqdlev", database "d1bvs7c11s3o58", SSL off
+Caused by: org.postgresql.util.PSQLException: FATAL: no pg_hba.conf entry for host "185.128.200.20", user "zcvfirvsnqdlev", database "d1bvs7c11s3o58", SSL off
 
-loadCardForUserNodeCount(com.istg.controller.CardControllerTest)  Time elapsed: 0.019 sec  <<< ERROR!
+loadCardForUserNodeCount(com.istg.controller.CardControllerTest)  Time elapsed: 0.109 sec  <<< ERROR!
 java.lang.IllegalStateException: Unable to create SecurityContext using @org.springframework.security.test.context.support.WithUserDetails(value="tom", userDetailsServiceBeanName="")
-Caused by: org.springframework.jdbc.CannotGetJdbcConnectionException: Could not get JDBC Connection; nested exception is org.postgresql.util.PSQLException: Ошибка при попытке подсоединения.
-Caused by: org.postgresql.util.PSQLException: Ошибка при попытке подсоединения.
-Caused by: java.net.UnknownHostException: vjxcwkiilteanj:e2d9316253c0eb936edd3d5d85eddc3eca429e1f39629913a96f2875bcbe4c9e@ec2-3-248-87-6.eu-west-1.compute.amazonaws.com
+Caused by: org.springframework.jdbc.CannotGetJdbcConnectionException: Could not get JDBC Connection; nested exception is org.postgresql.util.PSQLException: FATAL: no pg_hba.conf entry for host "185.128.200.20", user "zcvfirvsnqdlev", database "d1bvs7c11s3o58", SSL off
+Caused by: org.postgresql.util.PSQLException: FATAL: no pg_hba.conf entry for host "185.128.200.20", user "zcvfirvsnqdlev", database "d1bvs7c11s3o58", SSL off
 
-addGametoCard(com.istg.controller.CardControllerTest)  Time elapsed: 0.019 sec  <<< ERROR!
+addGametoCard(com.istg.controller.CardControllerTest)  Time elapsed: 0.113 sec  <<< ERROR!
 java.lang.IllegalStateException: Unable to create SecurityContext using @org.springframework.security.test.context.support.WithUserDetails(value="tom", userDetailsServiceBeanName="")
-Caused by: org.springframework.jdbc.CannotGetJdbcConnectionException: Could not get JDBC Connection; nested exception is org.postgresql.util.PSQLException: Ошибка при попытке подсоединения.
-Caused by: org.postgresql.util.PSQLException: Ошибка при попытке подсоединения.
-Caused by: java.net.UnknownHostException: vjxcwkiilteanj:e2d9316253c0eb936edd3d5d85eddc3eca429e1f39629913a96f2875bcbe4c9e@ec2-3-248-87-6.eu-west-1.compute.amazonaws.com
+Caused by: org.springframework.jdbc.CannotGetJdbcConnectionException: Could not get JDBC Connection; nested exception is org.postgresql.util.PSQLException: FATAL: no pg_hba.conf entry for host "185.128.200.20", user "zcvfirvsnqdlev", database "d1bvs7c11s3o58", SSL off
+Caused by: org.postgresql.util.PSQLException: FATAL: no pg_hba.conf entry for host "185.128.200.20", user "zcvfirvsnqdlev", database "d1bvs7c11s3o58", SSL off
 
