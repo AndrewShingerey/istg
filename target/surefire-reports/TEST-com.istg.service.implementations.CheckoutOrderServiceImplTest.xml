@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.istg.service.implementations.CheckoutOrderServiceImplTest" time="0.127" tests="11" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.istg.service.implementations.CheckoutOrderServiceImplTest" time="0.092" tests="11" errors="0" skipped="0" failures="0">
   <properties>
     <property name="idea.version" value="2021.1.3"/>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
@@ -60,13 +60,13 @@
   </properties>
   <testcase name="testFailedDelete" classname="com.istg.service.implementations.CheckoutOrderServiceImplTest" time="0.001"/>
   <testcase name="testTestSaveFailed" classname="com.istg.service.implementations.CheckoutOrderServiceImplTest" time="0.001"/>
-  <testcase name="testFailedUpdate" classname="com.istg.service.implementations.CheckoutOrderServiceImplTest" time="0.002"/>
-  <testcase name="testSave" classname="com.istg.service.implementations.CheckoutOrderServiceImplTest" time="0.002"/>
+  <testcase name="testFailedUpdate" classname="com.istg.service.implementations.CheckoutOrderServiceImplTest" time="0.001"/>
+  <testcase name="testSave" classname="com.istg.service.implementations.CheckoutOrderServiceImplTest" time="0.001"/>
   <testcase name="testGetByIdFailed" classname="com.istg.service.implementations.CheckoutOrderServiceImplTest" time="0.001"/>
-  <testcase name="testGetById" classname="com.istg.service.implementations.CheckoutOrderServiceImplTest" time="0.002"/>
+  <testcase name="testGetById" classname="com.istg.service.implementations.CheckoutOrderServiceImplTest" time="0.001"/>
   <testcase name="testTestSave" classname="com.istg.service.implementations.CheckoutOrderServiceImplTest" time="0.001"/>
-  <testcase name="testFailedSave" classname="com.istg.service.implementations.CheckoutOrderServiceImplTest" time="0.002"/>
+  <testcase name="testFailedSave" classname="com.istg.service.implementations.CheckoutOrderServiceImplTest" time="0.001"/>
   <testcase name="testDelete" classname="com.istg.service.implementations.CheckoutOrderServiceImplTest" time="0.001"/>
   <testcase name="testGetAll" classname="com.istg.service.implementations.CheckoutOrderServiceImplTest" time="0.001"/>
-  <testcase name="testUpdate" classname="com.istg.service.implementations.CheckoutOrderServiceImplTest" time="0.002"/>
+  <testcase name="testUpdate" classname="com.istg.service.implementations.CheckoutOrderServiceImplTest" time="0.001"/>
 </testsuite>

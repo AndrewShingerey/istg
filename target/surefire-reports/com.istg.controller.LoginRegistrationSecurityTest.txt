@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.istg.controller.LoginRegistrationSecurityTest
 -------------------------------------------------------------------------------
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.123 sec - in com.istg.controller.LoginRegistrationSecurityTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.018 sec - in com.istg.controller.LoginRegistrationSecurityTest

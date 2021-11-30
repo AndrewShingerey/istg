@@ -61,7 +61,7 @@
   <testcase name="testSummaMoreThen100[0]" classname="com.istg.utils.MassiveUtilsTest" time="0.001"/>
   <testcase name="testSummaMoreThen100[1]" classname="com.istg.utils.MassiveUtilsTest" time="0"/>
   <testcase name="testSummaMoreThen100[2]" classname="com.istg.utils.MassiveUtilsTest" time="0"/>
-  <testcase name="testSummaMoreThen100[3]" classname="com.istg.utils.MassiveUtilsTest" time="0"/>
+  <testcase name="testSummaMoreThen100[3]" classname="com.istg.utils.MassiveUtilsTest" time="0.001"/>
   <testcase name="testSummaMoreThen100[4]" classname="com.istg.utils.MassiveUtilsTest" time="0"/>
   <testcase name="testSummaMoreThen100[5]" classname="com.istg.utils.MassiveUtilsTest" time="0"/>
   <testcase name="testSummaMoreThen100[6]" classname="com.istg.utils.MassiveUtilsTest" time="0"/>
