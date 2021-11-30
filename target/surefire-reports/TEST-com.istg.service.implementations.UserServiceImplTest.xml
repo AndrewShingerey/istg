@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.istg.service.implementations.UserServiceImplTest" time="0.232" tests="10" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.istg.service.implementations.UserServiceImplTest" time="0.215" tests="10" errors="0" skipped="0" failures="0">
   <properties>
     <property name="idea.version" value="2021.1.3"/>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
@@ -59,12 +59,12 @@
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
   <testcase name="LoadUserByUsernameTest_WithName_True" classname="com.istg.service.implementations.UserServiceImplTest" time="0.001"/>
-  <testcase name="SaveUserTest_withGoodData_True" classname="com.istg.service.implementations.UserServiceImplTest" time="0.071"/>
+  <testcase name="SaveUserTest_withGoodData_True" classname="com.istg.service.implementations.UserServiceImplTest" time="0.068"/>
   <testcase name="GetAllUserTest" classname="com.istg.service.implementations.UserServiceImplTest" time="0.001"/>
   <testcase name="DeleteUserTest_WithId1_True" classname="com.istg.service.implementations.UserServiceImplTest" time="0.001"/>
-  <testcase name="GetUserByidTest_WithIdNull_False" classname="com.istg.service.implementations.UserServiceImplTest" time="0.001"/>
+  <testcase name="GetUserByidTest_WithIdNull_False" classname="com.istg.service.implementations.UserServiceImplTest" time="0.002"/>
   <testcase name="UpdateUserTest_withGoodData_True" classname="com.istg.service.implementations.UserServiceImplTest" time="0.001"/>
-  <testcase name="SaveUserTest_withBadData_False" classname="com.istg.service.implementations.UserServiceImplTest" time="0.074"/>
+  <testcase name="SaveUserTest_withBadData_False" classname="com.istg.service.implementations.UserServiceImplTest" time="0.067"/>
   <testcase name="UpdateUserTest_EmptyId_False" classname="com.istg.service.implementations.UserServiceImplTest" time="0.001"/>
   <testcase name="DeleteUserTest_WithIdNull_False" classname="com.istg.service.implementations.UserServiceImplTest" time="0.001"/>
   <testcase name="GetUserByidTest_WithId1_True" classname="com.istg.service.implementations.UserServiceImplTest" time="0.001"/>
