@@ -1,34 +1,40 @@
 -------------------------------------------------------------------------------
 Test set: com.istg.controller.CardControllerTest
 -------------------------------------------------------------------------------
-Tests run: 6, Failures: 0, Errors: 6, Skipped: 0, Time elapsed: 1.485 sec <<< FAILURE! - in com.istg.controller.CardControllerTest
-orderCardFailed(com.istg.controller.CardControllerTest)  Time elapsed: 0.075 sec  <<< ERROR!
+Tests run: 6, Failures: 0, Errors: 6, Skipped: 0, Time elapsed: 1.579 sec <<< FAILURE! - in com.istg.controller.CardControllerTest
+orderCardFailed(com.istg.controller.CardControllerTest)  Time elapsed: 0.046 sec  <<< ERROR!
 java.lang.IllegalStateException: Unable to create SecurityContext using @org.springframework.security.test.context.support.WithUserDetails(value="tom", userDetailsServiceBeanName="")
-Caused by: org.springframework.jdbc.CannotGetJdbcConnectionException: Could not get JDBC Connection; nested exception is java.sql.SQLException: No suitable driver found for postgres://vjxcwkiilteanj:e2d9316253c0eb936edd3d5d85eddc3eca429e1f39629913a96f2875bcbe4c9e@ec2-3-248-87-6.eu-west-1.compute.amazonaws.com:5432/d1bvs7c11s3o58
-Caused by: java.sql.SQLException: No suitable driver found for postgres://vjxcwkiilteanj:e2d9316253c0eb936edd3d5d85eddc3eca429e1f39629913a96f2875bcbe4c9e@ec2-3-248-87-6.eu-west-1.compute.amazonaws.com:5432/d1bvs7c11s3o58
+Caused by: org.springframework.jdbc.CannotGetJdbcConnectionException: Could not get JDBC Connection; nested exception is org.postgresql.util.PSQLException: Ошибка при попытке подсоединения.
+Caused by: org.postgresql.util.PSQLException: Ошибка при попытке подсоединения.
+Caused by: java.net.UnknownHostException: vjxcwkiilteanj:e2d9316253c0eb936edd3d5d85eddc3eca429e1f39629913a96f2875bcbe4c9e@ec2-3-248-87-6.eu-west-1.compute.amazonaws.com
 
-loadCardForUser(com.istg.controller.CardControllerTest)  Time elapsed: 0.072 sec  <<< ERROR!
+loadCardForUser(com.istg.controller.CardControllerTest)  Time elapsed: 0.056 sec  <<< ERROR!
 java.lang.IllegalStateException: Unable to create SecurityContext using @org.springframework.security.test.context.support.WithUserDetails(value="tom", userDetailsServiceBeanName="")
-Caused by: org.springframework.jdbc.CannotGetJdbcConnectionException: Could not get JDBC Connection; nested exception is java.sql.SQLException: No suitable driver found for postgres://vjxcwkiilteanj:e2d9316253c0eb936edd3d5d85eddc3eca429e1f39629913a96f2875bcbe4c9e@ec2-3-248-87-6.eu-west-1.compute.amazonaws.com:5432/d1bvs7c11s3o58
-Caused by: java.sql.SQLException: No suitable driver found for postgres://vjxcwkiilteanj:e2d9316253c0eb936edd3d5d85eddc3eca429e1f39629913a96f2875bcbe4c9e@ec2-3-248-87-6.eu-west-1.compute.amazonaws.com:5432/d1bvs7c11s3o58
+Caused by: org.springframework.jdbc.CannotGetJdbcConnectionException: Could not get JDBC Connection; nested exception is org.postgresql.util.PSQLException: Ошибка при попытке подсоединения.
+Caused by: org.postgresql.util.PSQLException: Ошибка при попытке подсоединения.
+Caused by: java.net.UnknownHostException: vjxcwkiilteanj:e2d9316253c0eb936edd3d5d85eddc3eca429e1f39629913a96f2875bcbe4c9e@ec2-3-248-87-6.eu-west-1.compute.amazonaws.com
 
-addDelete(com.istg.controller.CardControllerTest)  Time elapsed: 0.02 sec  <<< ERROR!
+addDelete(com.istg.controller.CardControllerTest)  Time elapsed: 0.037 sec  <<< ERROR!
 java.lang.IllegalStateException: Unable to create SecurityContext using @org.springframework.security.test.context.support.WithUserDetails(value="tom", userDetailsServiceBeanName="")
-Caused by: org.springframework.jdbc.CannotGetJdbcConnectionException: Could not get JDBC Connection; nested exception is java.sql.SQLException: No suitable driver found for postgres://vjxcwkiilteanj:e2d9316253c0eb936edd3d5d85eddc3eca429e1f39629913a96f2875bcbe4c9e@ec2-3-248-87-6.eu-west-1.compute.amazonaws.com:5432/d1bvs7c11s3o58
-Caused by: java.sql.SQLException: No suitable driver found for postgres://vjxcwkiilteanj:e2d9316253c0eb936edd3d5d85eddc3eca429e1f39629913a96f2875bcbe4c9e@ec2-3-248-87-6.eu-west-1.compute.amazonaws.com:5432/d1bvs7c11s3o58
+Caused by: org.springframework.jdbc.CannotGetJdbcConnectionException: Could not get JDBC Connection; nested exception is org.postgresql.util.PSQLException: Ошибка при попытке подсоединения.
+Caused by: org.postgresql.util.PSQLException: Ошибка при попытке подсоединения.
+Caused by: java.net.UnknownHostException: vjxcwkiilteanj:e2d9316253c0eb936edd3d5d85eddc3eca429e1f39629913a96f2875bcbe4c9e@ec2-3-248-87-6.eu-west-1.compute.amazonaws.com
 
-orderCard(com.istg.controller.CardControllerTest)  Time elapsed: 0.015 sec  <<< ERROR!
+orderCard(com.istg.controller.CardControllerTest)  Time elapsed: 0.02 sec  <<< ERROR!
 java.lang.IllegalStateException: Unable to create SecurityContext using @org.springframework.security.test.context.support.WithUserDetails(value="tom", userDetailsServiceBeanName="")
-Caused by: org.springframework.jdbc.CannotGetJdbcConnectionException: Could not get JDBC Connection; nested exception is java.sql.SQLException: No suitable driver found for postgres://vjxcwkiilteanj:e2d9316253c0eb936edd3d5d85eddc3eca429e1f39629913a96f2875bcbe4c9e@ec2-3-248-87-6.eu-west-1.compute.amazonaws.com:5432/d1bvs7c11s3o58
-Caused by: java.sql.SQLException: No suitable driver found for postgres://vjxcwkiilteanj:e2d9316253c0eb936edd3d5d85eddc3eca429e1f39629913a96f2875bcbe4c9e@ec2-3-248-87-6.eu-west-1.compute.amazonaws.com:5432/d1bvs7c11s3o58
+Caused by: org.springframework.jdbc.CannotGetJdbcConnectionException: Could not get JDBC Connection; nested exception is org.postgresql.util.PSQLException: Ошибка при попытке подсоединения.
+Caused by: org.postgresql.util.PSQLException: Ошибка при попытке подсоединения.
+Caused by: java.net.UnknownHostException: vjxcwkiilteanj:e2d9316253c0eb936edd3d5d85eddc3eca429e1f39629913a96f2875bcbe4c9e@ec2-3-248-87-6.eu-west-1.compute.amazonaws.com
 
-loadCardForUserNodeCount(com.istg.controller.CardControllerTest)  Time elapsed: 0.026 sec  <<< ERROR!
+loadCardForUserNodeCount(com.istg.controller.CardControllerTest)  Time elapsed: 0.019 sec  <<< ERROR!
 java.lang.IllegalStateException: Unable to create SecurityContext using @org.springframework.security.test.context.support.WithUserDetails(value="tom", userDetailsServiceBeanName="")
-Caused by: org.springframework.jdbc.CannotGetJdbcConnectionException: Could not get JDBC Connection; nested exception is java.sql.SQLException: No suitable driver found for postgres://vjxcwkiilteanj:e2d9316253c0eb936edd3d5d85eddc3eca429e1f39629913a96f2875bcbe4c9e@ec2-3-248-87-6.eu-west-1.compute.amazonaws.com:5432/d1bvs7c11s3o58
-Caused by: java.sql.SQLException: No suitable driver found for postgres://vjxcwkiilteanj:e2d9316253c0eb936edd3d5d85eddc3eca429e1f39629913a96f2875bcbe4c9e@ec2-3-248-87-6.eu-west-1.compute.amazonaws.com:5432/d1bvs7c11s3o58
+Caused by: org.springframework.jdbc.CannotGetJdbcConnectionException: Could not get JDBC Connection; nested exception is org.postgresql.util.PSQLException: Ошибка при попытке подсоединения.
+Caused by: org.postgresql.util.PSQLException: Ошибка при попытке подсоединения.
+Caused by: java.net.UnknownHostException: vjxcwkiilteanj:e2d9316253c0eb936edd3d5d85eddc3eca429e1f39629913a96f2875bcbe4c9e@ec2-3-248-87-6.eu-west-1.compute.amazonaws.com
 
-addGametoCard(com.istg.controller.CardControllerTest)  Time elapsed: 0.016 sec  <<< ERROR!
+addGametoCard(com.istg.controller.CardControllerTest)  Time elapsed: 0.019 sec  <<< ERROR!
 java.lang.IllegalStateException: Unable to create SecurityContext using @org.springframework.security.test.context.support.WithUserDetails(value="tom", userDetailsServiceBeanName="")
-Caused by: org.springframework.jdbc.CannotGetJdbcConnectionException: Could not get JDBC Connection; nested exception is java.sql.SQLException: No suitable driver found for postgres://vjxcwkiilteanj:e2d9316253c0eb936edd3d5d85eddc3eca429e1f39629913a96f2875bcbe4c9e@ec2-3-248-87-6.eu-west-1.compute.amazonaws.com:5432/d1bvs7c11s3o58
-Caused by: java.sql.SQLException: No suitable driver found for postgres://vjxcwkiilteanj:e2d9316253c0eb936edd3d5d85eddc3eca429e1f39629913a96f2875bcbe4c9e@ec2-3-248-87-6.eu-west-1.compute.amazonaws.com:5432/d1bvs7c11s3o58
+Caused by: org.springframework.jdbc.CannotGetJdbcConnectionException: Could not get JDBC Connection; nested exception is org.postgresql.util.PSQLException: Ошибка при попытке подсоединения.
+Caused by: org.postgresql.util.PSQLException: Ошибка при попытке подсоединения.
+Caused by: java.net.UnknownHostException: vjxcwkiilteanj:e2d9316253c0eb936edd3d5d85eddc3eca429e1f39629913a96f2875bcbe4c9e@ec2-3-248-87-6.eu-west-1.compute.amazonaws.com
 

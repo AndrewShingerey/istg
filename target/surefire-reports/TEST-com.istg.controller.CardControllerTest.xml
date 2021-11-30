@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.istg.controller.CardControllerTest" time="1.485" tests="6" errors="6" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.istg.controller.CardControllerTest" time="1.579" tests="6" errors="6" skipped="0" failures="0">
   <properties>
     <property name="idea.version" value="2021.1.3"/>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
@@ -43,7 +43,7 @@
     <property name="java.class.path" value="D:\IID\IntelliJ IDEA 2021.1\plugins\maven\lib\maven3\boot\plexus-classworlds-2.6.0.jar;D:\IID\IntelliJ IDEA 2021.1\plugins\maven\lib\maven3\boot\plexus-classworlds.license"/>
     <property name="java.vm.specification.version" value="15"/>
     <property name="sun.arch.data.model" value="64"/>
-    <property name="sun.java.command" value="org.codehaus.classworlds.Launcher -Didea.version=2021.1.3 --update-snapshots package"/>
+    <property name="sun.java.command" value="org.codehaus.classworlds.Launcher -Didea.version=2021.1.3 --update-snapshots clean package"/>
     <property name="java.home" value="C:\Users\Admin\.jdks\openjdk-15.0.1"/>
     <property name="user.language" value="ru"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
@@ -58,14 +58,15 @@
     <property name="sun.cpu.endian" value="little"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="orderCardFailed" classname="com.istg.controller.CardControllerTest" time="0.075">
+  <testcase name="orderCardFailed" classname="com.istg.controller.CardControllerTest" time="0.046">
     <error message="Unable to create SecurityContext using @org.springframework.security.test.context.support.WithUserDetails(value=&quot;tom&quot;, userDetailsServiceBeanName=&quot;&quot;)" type="java.lang.IllegalStateException">java.lang.IllegalStateException: Unable to create SecurityContext using @org.springframework.security.test.context.support.WithUserDetails(value="tom", userDetailsServiceBeanName="")
-Caused by: org.springframework.jdbc.CannotGetJdbcConnectionException: Could not get JDBC Connection; nested exception is java.sql.SQLException: No suitable driver found for postgres://vjxcwkiilteanj:e2d9316253c0eb936edd3d5d85eddc3eca429e1f39629913a96f2875bcbe4c9e@ec2-3-248-87-6.eu-west-1.compute.amazonaws.com:5432/d1bvs7c11s3o58
-Caused by: java.sql.SQLException: No suitable driver found for postgres://vjxcwkiilteanj:e2d9316253c0eb936edd3d5d85eddc3eca429e1f39629913a96f2875bcbe4c9e@ec2-3-248-87-6.eu-west-1.compute.amazonaws.com:5432/d1bvs7c11s3o58
+Caused by: org.springframework.jdbc.CannotGetJdbcConnectionException: Could not get JDBC Connection; nested exception is org.postgresql.util.PSQLException: Ошибка при попытке подсоединения.
+Caused by: org.postgresql.util.PSQLException: Ошибка при попытке подсоединения.
+Caused by: java.net.UnknownHostException: vjxcwkiilteanj:e2d9316253c0eb936edd3d5d85eddc3eca429e1f39629913a96f2875bcbe4c9e@ec2-3-248-87-6.eu-west-1.compute.amazonaws.com
 </error>
-    <system-out><![CDATA[2021-11-30 22:08:00.319  INFO 4624 --- [           main] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.istg.controller.CardControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
-2021-11-30 22:08:00.340  INFO 4624 --- [           main] .b.t.a.w.s.WebMvcTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener]
-2021-11-30 22:08:00.343  INFO 4624 --- [           main] .b.t.a.w.s.WebMvcTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@5950054d, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@24018c8b, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@4cf230bf, org.springframework.test.context.support.DirtiesContextTestExecutionListener@3dc55719, org.springframework.test.context.transaction.TransactionalTestExecutionListener@64665781, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@4c2bea52, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener@11015ca0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@6ebbc06, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@50672905, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@430d3021, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@58f290bc, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@3220c28, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@6ae42248]
+    <system-out><![CDATA[2021-11-30 22:25:01.332  INFO 4620 --- [           main] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.istg.controller.CardControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2021-11-30 22:25:01.354  INFO 4620 --- [           main] .b.t.a.w.s.WebMvcTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener]
+2021-11-30 22:25:01.357  INFO 4620 --- [           main] .b.t.a.w.s.WebMvcTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@1c8e8fed, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@70f98f7a, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@713e7d9a, org.springframework.test.context.support.DirtiesContextTestExecutionListener@681d704e, org.springframework.test.context.transaction.TransactionalTestExecutionListener@846b47, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@3c3ab672, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener@3e6acec2, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@3d764641, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@1e8bccfb, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@77eb607e, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@1f1fbc9f, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@10d4b573, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@50785f86]
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -75,60 +76,60 @@ Caused by: java.sql.SQLException: No suitable driver found for postgres://vjxcwk
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::        (v1.5.2.RELEASE)
 
-2021-11-30 22:08:00.398  INFO 4624 --- [           main] com.istg.controller.CardControllerTest   : Starting CardControllerTest on Andrew with PID 4624 (started by Andrew in D:\3 course 2 sem\MT\ISTG)
-2021-11-30 22:08:00.398  INFO 4624 --- [           main] com.istg.controller.CardControllerTest   : No active profile set, falling back to default profiles: default
-2021-11-30 22:08:00.399  INFO 4624 --- [           main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@7ee2423: startup date [Tue Nov 30 22:08:00 MSK 2021]; root of context hierarchy
-2021-11-30 22:08:00.707  INFO 4624 --- [           main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
-2021-11-30 22:08:00.739  INFO 4624 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration$$EnhancerBySpringCGLIB$$6fb8b26b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-11-30 22:08:00.743  INFO 4624 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'objectPostProcessor' of type [org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-11-30 22:08:00.743  INFO 4624 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@74231642' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-11-30 22:08:00.749  INFO 4624 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration$$EnhancerBySpringCGLIB$$948d551d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-11-30 22:08:00.751  INFO 4624 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-11-30 22:08:00.781  INFO 4624 --- [           main] o.s.j.d.DriverManagerDataSource          : Loaded JDBC driver: org.postgresql.Driver
-2021-11-30 22:08:01.137  INFO 4624 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3a7d914c, org.springframework.security.web.context.SecurityContextPersistenceFilter@3e489ac1, org.springframework.security.web.header.HeaderWriterFilter@3d57fb9e, org.springframework.security.web.csrf.CsrfFilter@771cbd13, org.springframework.security.web.authentication.logout.LogoutFilter@4fe4503a, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@608f310a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@26888c31, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@194e78af, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@515940af, org.springframework.security.web.session.SessionManagementFilter@2c2e5e72, org.springframework.security.web.access.ExceptionTranslationFilter@229749f0, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5831989d]
-2021-11-30 22:08:01.211  INFO 4624 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@7ee2423: startup date [Tue Nov 30 22:08:00 MSK 2021]; root of context hierarchy
-2021-11-30 22:08:01.234  INFO 4624 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/listcheckoutorder/delete/{id}],methods=[GET]}" onto public java.lang.String com.istg.controller.AdminController.deleteCheckoutOrder(java.lang.String)
-2021-11-30 22:08:01.234  INFO 4624 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/listofuser],methods=[GET]}" onto public java.lang.String com.istg.controller.AdminController.userList(org.springframework.ui.Model)
-2021-11-30 22:08:01.235  INFO 4624 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/listofgame],methods=[GET]}" onto public java.lang.String com.istg.controller.AdminController.listOfGame(org.springframework.ui.Model)
-2021-11-30 22:08:01.235  INFO 4624 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/listofgame/addgame],methods=[POST]}" onto public java.lang.String com.istg.controller.AdminController.addnewGame(java.lang.String,java.lang.String,java.lang.String,java.lang.String,org.springframework.web.multipart.MultipartFile) throws java.io.IOException
-2021-11-30 22:08:01.235  INFO 4624 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/home],methods=[GET]}" onto public java.lang.String com.istg.controller.AdminController.homeAdminPanel()
-2021-11-30 22:08:01.236  INFO 4624 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/listcontactus],methods=[GET]}" onto public java.lang.String com.istg.controller.AdminController.listofContactus(org.springframework.ui.Model)
-2021-11-30 22:08:01.236  INFO 4624 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/delete/{id}],methods=[GET]}" onto public java.lang.String com.istg.controller.AdminController.deleteGame(java.lang.String)
-2021-11-30 22:08:01.236  INFO 4624 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/listofuser/edit/{id}],methods=[POST]}" onto public java.lang.String com.istg.controller.AdminController.editUser(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
-2021-11-30 22:08:01.236  INFO 4624 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/listcontactus/delete/{id}],methods=[GET]}" onto public java.lang.String com.istg.controller.AdminController.deleteContactUS(java.lang.String)
-2021-11-30 22:08:01.236  INFO 4624 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/listofuser/delete/{id}],methods=[GET]}" onto public java.lang.String com.istg.controller.AdminController.deleteUser(java.lang.String)
-2021-11-30 22:08:01.237  INFO 4624 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/listoffeedback/delete/{id}],methods=[GET]}" onto public java.lang.String com.istg.controller.AdminController.deleteFeedback(java.lang.String)
-2021-11-30 22:08:01.237  INFO 4624 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/listoffeedback],methods=[GET]}" onto public java.lang.String com.istg.controller.AdminController.listFeedback(org.springframework.ui.Model)
-2021-11-30 22:08:01.237  INFO 4624 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/listcheckoutorder],methods=[GET]}" onto public java.lang.String com.istg.controller.AdminController.listcheckoutOrder(org.springframework.ui.Model)
-2021-11-30 22:08:01.237  INFO 4624 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/Edit/{id}],methods=[POST]}" onto public java.lang.String com.istg.controller.AdminController.editGame(java.lang.String,java.lang.String,java.lang.String,java.lang.String,org.springframework.web.multipart.MultipartFile,java.lang.String)
-2021-11-30 22:08:01.237  INFO 4624 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/listcarduser],methods=[GET]}" onto public java.lang.String com.istg.controller.AdminController.listcardUser(org.springframework.ui.Model)
-2021-11-30 22:08:01.239  INFO 4624 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/card/deletecard/{tb_id}],methods=[GET]}" onto public java.lang.String com.istg.controller.CardController.deleteProductFromCard(com.istg.domain.User,java.lang.String)
-2021-11-30 22:08:01.240  INFO 4624 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/card/onegame/{id}],methods=[GET]}" onto public java.lang.String com.istg.controller.CardController.oneGame(java.lang.String,org.springframework.ui.Model)
-2021-11-30 22:08:01.240  INFO 4624 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/card/carduser],methods=[GET]}" onto public java.lang.String com.istg.controller.CardController.cardUser(com.istg.domain.User,org.springframework.ui.Model)
-2021-11-30 22:08:01.240  INFO 4624 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/card/orderCard],methods=[POST]}" onto public java.lang.String com.istg.controller.CardController.orderCard(com.istg.domain.User,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
-2021-11-30 22:08:01.240  INFO 4624 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/card/addtocard/{idGame}],methods=[GET]}" onto public java.lang.String com.istg.controller.CardController.addtoCard(com.istg.domain.User,java.lang.String)
-2021-11-30 22:08:01.241  INFO 4624 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/contactus/],methods=[GET]}" onto public java.lang.String com.istg.controller.ContactUsController.contactUsPage()
-2021-11-30 22:08:01.241  INFO 4624 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/contactus/sendcontact],methods=[POST]}" onto public java.lang.String com.istg.controller.ContactUsController.sendContact(java.lang.String,java.lang.String,java.lang.String,java.lang.String)
-2021-11-30 22:08:01.242  INFO 4624 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/games/find],methods=[POST]}" onto public java.lang.String com.istg.controller.GamesController.findByName(java.lang.String,org.springframework.ui.Model)
-2021-11-30 22:08:01.242  INFO 4624 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/games/],methods=[GET]}" onto public java.lang.String com.istg.controller.GamesController.gameHome(org.springframework.ui.Model)
-2021-11-30 22:08:01.242  INFO 4624 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/home/],methods=[GET]}" onto public java.lang.String com.istg.controller.HomeController.homePage(org.springframework.ui.Model)
-2021-11-30 22:08:01.243  INFO 4624 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/registration/],methods=[GET]}" onto public java.lang.String com.istg.controller.RegistrationController.registration()
-2021-11-30 22:08:01.243  INFO 4624 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/registration/addnewuser],methods=[POST]}" onto public java.lang.String com.istg.controller.RegistrationController.registration(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
-2021-11-30 22:08:01.245  INFO 4624 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
-2021-11-30 22:08:01.245  INFO 4624 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
-2021-11-30 22:08:01.267  INFO 4624 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/login] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
-2021-11-30 22:08:01.301  INFO 4624 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/static/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2021-11-30 22:08:01.301  INFO 4624 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/img/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2021-11-30 22:08:01.301  INFO 4624 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2021-11-30 22:08:01.301  INFO 4624 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2021-11-30 22:08:01.338  INFO 4624 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2021-11-30 22:08:01.424  INFO 4624 --- [           main] o.s.w.s.v.f.FreeMarkerConfigurer         : ClassTemplateLoader for Spring macros added to FreeMarker configuration
-2021-11-30 22:08:01.481  INFO 4624 --- [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring FrameworkServlet ''
-2021-11-30 22:08:01.481  INFO 4624 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization started
-2021-11-30 22:08:01.492  INFO 4624 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization completed in 11 ms
-2021-11-30 22:08:01.630  INFO 4624 --- [           main] com.istg.controller.CardControllerTest   : Started CardControllerTest in 1.28 seconds (JVM running for 5.815)
-2021-11-30 22:08:01.637  INFO 4624 --- [           main] c.istg.dao.implementations.UserDaoImpl   : Get user by username - tom 2021-11-30
-2021-11-30 22:08:01.643  WARN 4624 --- [           main] o.s.test.context.TestContextManager      : Caught exception while allowing TestExecutionListener [org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener@11015ca0] to process 'before' execution of test method [public void com.istg.controller.CardControllerTest.orderCardFailed() throws java.lang.Exception] for test instance [com.istg.controller.CardControllerTest@2aac6fa7]
+2021-11-30 22:25:01.393  INFO 4620 --- [           main] com.istg.controller.CardControllerTest   : Starting CardControllerTest on Andrew with PID 4620 (started by Andrew in D:\3 course 2 sem\MT\ISTG)
+2021-11-30 22:25:01.393  INFO 4620 --- [           main] com.istg.controller.CardControllerTest   : No active profile set, falling back to default profiles: default
+2021-11-30 22:25:01.394  INFO 4620 --- [           main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@5d297d4d: startup date [Tue Nov 30 22:25:01 MSK 2021]; root of context hierarchy
+2021-11-30 22:25:01.693  INFO 4620 --- [           main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2021-11-30 22:25:01.741  INFO 4620 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration$$EnhancerBySpringCGLIB$$e218c728] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-11-30 22:25:01.746  INFO 4620 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'objectPostProcessor' of type [org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-11-30 22:25:01.746  INFO 4620 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@6f80cf5' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-11-30 22:25:01.751  INFO 4620 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration$$EnhancerBySpringCGLIB$$6ed69da] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-11-30 22:25:01.754  INFO 4620 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-11-30 22:25:01.792  INFO 4620 --- [           main] o.s.j.d.DriverManagerDataSource          : Loaded JDBC driver: org.postgresql.Driver
+2021-11-30 22:25:02.290  INFO 4620 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@22368ddc, org.springframework.security.web.context.SecurityContextPersistenceFilter@3b8b4846, org.springframework.security.web.header.HeaderWriterFilter@6c8e5ac4, org.springframework.security.web.csrf.CsrfFilter@437c1a87, org.springframework.security.web.authentication.logout.LogoutFilter@4e6280de, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@146add7b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4e357792, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@50734cea, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@72b10258, org.springframework.security.web.session.SessionManagementFilter@1800c1e3, org.springframework.security.web.access.ExceptionTranslationFilter@5b55c3d6, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@24842b8e]
+2021-11-30 22:25:02.372  INFO 4620 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@5d297d4d: startup date [Tue Nov 30 22:25:01 MSK 2021]; root of context hierarchy
+2021-11-30 22:25:02.399  INFO 4620 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/listcheckoutorder/delete/{id}],methods=[GET]}" onto public java.lang.String com.istg.controller.AdminController.deleteCheckoutOrder(java.lang.String)
+2021-11-30 22:25:02.399  INFO 4620 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/listofuser],methods=[GET]}" onto public java.lang.String com.istg.controller.AdminController.userList(org.springframework.ui.Model)
+2021-11-30 22:25:02.399  INFO 4620 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/delete/{id}],methods=[GET]}" onto public java.lang.String com.istg.controller.AdminController.deleteGame(java.lang.String)
+2021-11-30 22:25:02.399  INFO 4620 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/listofgame],methods=[GET]}" onto public java.lang.String com.istg.controller.AdminController.listOfGame(org.springframework.ui.Model)
+2021-11-30 22:25:02.400  INFO 4620 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/Edit/{id}],methods=[POST]}" onto public java.lang.String com.istg.controller.AdminController.editGame(java.lang.String,java.lang.String,java.lang.String,java.lang.String,org.springframework.web.multipart.MultipartFile,java.lang.String)
+2021-11-30 22:25:02.400  INFO 4620 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/listofuser/delete/{id}],methods=[GET]}" onto public java.lang.String com.istg.controller.AdminController.deleteUser(java.lang.String)
+2021-11-30 22:25:02.400  INFO 4620 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/listofuser/edit/{id}],methods=[POST]}" onto public java.lang.String com.istg.controller.AdminController.editUser(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2021-11-30 22:25:02.400  INFO 4620 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/home],methods=[GET]}" onto public java.lang.String com.istg.controller.AdminController.homeAdminPanel()
+2021-11-30 22:25:02.401  INFO 4620 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/listofgame/addgame],methods=[POST]}" onto public java.lang.String com.istg.controller.AdminController.addnewGame(java.lang.String,java.lang.String,java.lang.String,java.lang.String,org.springframework.web.multipart.MultipartFile) throws java.io.IOException
+2021-11-30 22:25:02.401  INFO 4620 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/listcontactus],methods=[GET]}" onto public java.lang.String com.istg.controller.AdminController.listofContactus(org.springframework.ui.Model)
+2021-11-30 22:25:02.402  INFO 4620 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/listcheckoutorder],methods=[GET]}" onto public java.lang.String com.istg.controller.AdminController.listcheckoutOrder(org.springframework.ui.Model)
+2021-11-30 22:25:02.402  INFO 4620 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/listoffeedback],methods=[GET]}" onto public java.lang.String com.istg.controller.AdminController.listFeedback(org.springframework.ui.Model)
+2021-11-30 22:25:02.402  INFO 4620 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/listcarduser],methods=[GET]}" onto public java.lang.String com.istg.controller.AdminController.listcardUser(org.springframework.ui.Model)
+2021-11-30 22:25:02.402  INFO 4620 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/listcontactus/delete/{id}],methods=[GET]}" onto public java.lang.String com.istg.controller.AdminController.deleteContactUS(java.lang.String)
+2021-11-30 22:25:02.403  INFO 4620 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/listoffeedback/delete/{id}],methods=[GET]}" onto public java.lang.String com.istg.controller.AdminController.deleteFeedback(java.lang.String)
+2021-11-30 22:25:02.405  INFO 4620 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/card/deletecard/{tb_id}],methods=[GET]}" onto public java.lang.String com.istg.controller.CardController.deleteProductFromCard(com.istg.domain.User,java.lang.String)
+2021-11-30 22:25:02.405  INFO 4620 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/card/orderCard],methods=[POST]}" onto public java.lang.String com.istg.controller.CardController.orderCard(com.istg.domain.User,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2021-11-30 22:25:02.405  INFO 4620 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/card/addtocard/{idGame}],methods=[GET]}" onto public java.lang.String com.istg.controller.CardController.addtoCard(com.istg.domain.User,java.lang.String)
+2021-11-30 22:25:02.405  INFO 4620 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/card/onegame/{id}],methods=[GET]}" onto public java.lang.String com.istg.controller.CardController.oneGame(java.lang.String,org.springframework.ui.Model)
+2021-11-30 22:25:02.405  INFO 4620 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/card/carduser],methods=[GET]}" onto public java.lang.String com.istg.controller.CardController.cardUser(com.istg.domain.User,org.springframework.ui.Model)
+2021-11-30 22:25:02.406  INFO 4620 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/contactus/sendcontact],methods=[POST]}" onto public java.lang.String com.istg.controller.ContactUsController.sendContact(java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2021-11-30 22:25:02.406  INFO 4620 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/contactus/],methods=[GET]}" onto public java.lang.String com.istg.controller.ContactUsController.contactUsPage()
+2021-11-30 22:25:02.407  INFO 4620 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/games/find],methods=[POST]}" onto public java.lang.String com.istg.controller.GamesController.findByName(java.lang.String,org.springframework.ui.Model)
+2021-11-30 22:25:02.407  INFO 4620 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/games/],methods=[GET]}" onto public java.lang.String com.istg.controller.GamesController.gameHome(org.springframework.ui.Model)
+2021-11-30 22:25:02.408  INFO 4620 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/home/],methods=[GET]}" onto public java.lang.String com.istg.controller.HomeController.homePage(org.springframework.ui.Model)
+2021-11-30 22:25:02.409  INFO 4620 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/registration/],methods=[GET]}" onto public java.lang.String com.istg.controller.RegistrationController.registration()
+2021-11-30 22:25:02.409  INFO 4620 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/registration/addnewuser],methods=[POST]}" onto public java.lang.String com.istg.controller.RegistrationController.registration(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2021-11-30 22:25:02.411  INFO 4620 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2021-11-30 22:25:02.412  INFO 4620 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2021-11-30 22:25:02.436  INFO 4620 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/login] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2021-11-30 22:25:02.454  INFO 4620 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/static/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-11-30 22:25:02.454  INFO 4620 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/img/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-11-30 22:25:02.454  INFO 4620 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-11-30 22:25:02.454  INFO 4620 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-11-30 22:25:02.500  INFO 4620 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-11-30 22:25:02.581  INFO 4620 --- [           main] o.s.w.s.v.f.FreeMarkerConfigurer         : ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2021-11-30 22:25:02.637  INFO 4620 --- [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring FrameworkServlet ''
+2021-11-30 22:25:02.637  INFO 4620 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization started
+2021-11-30 22:25:02.644  INFO 4620 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization completed in 7 ms
+2021-11-30 22:25:02.762  INFO 4620 --- [           main] com.istg.controller.CardControllerTest   : Started CardControllerTest in 1.398 seconds (JVM running for 6.088)
+2021-11-30 22:25:02.768  INFO 4620 --- [           main] c.istg.dao.implementations.UserDaoImpl   : Get user by username - tom 2021-11-30
+2021-11-30 22:25:02.775  WARN 4620 --- [           main] o.s.test.context.TestContextManager      : Caught exception while allowing TestExecutionListener [org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener@3e6acec2] to process 'before' execution of test method [public void com.istg.controller.CardControllerTest.orderCardFailed() throws java.lang.Exception] for test instance [com.istg.controller.CardControllerTest@c89e263]
 
 java.lang.IllegalStateException: Unable to create SecurityContext using @org.springframework.security.test.context.support.WithUserDetails(value="tom", userDetailsServiceBeanName="")
 	at org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener.createSecurityContext(WithSecurityContextTestExecutionListener.java:99) ~[spring-security-test-4.2.2.RELEASE.jar:4.2.2.RELEASE]
@@ -157,7 +158,7 @@ java.lang.IllegalStateException: Unable to create SecurityContext using @org.spr
 	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290) ~[surefire-booter-2.19.1.jar:2.19.1]
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242) ~[surefire-booter-2.19.1.jar:2.19.1]
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121) ~[surefire-booter-2.19.1.jar:2.19.1]
-Caused by: org.springframework.jdbc.CannotGetJdbcConnectionException: Could not get JDBC Connection; nested exception is java.sql.SQLException: No suitable driver found for postgres://vjxcwkiilteanj:e2d9316253c0eb936edd3d5d85eddc3eca429e1f39629913a96f2875bcbe4c9e@ec2-3-248-87-6.eu-west-1.compute.amazonaws.com:5432/d1bvs7c11s3o58
+Caused by: org.springframework.jdbc.CannotGetJdbcConnectionException: Could not get JDBC Connection; nested exception is org.postgresql.util.PSQLException: РћС€РёР±РєР° РїСЂРё РїРѕРїС‹С‚РєРµ РїРѕРґСЃРѕРµРґРёРЅРµРЅРёСЏ.
 	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:80) ~[spring-jdbc-4.3.7.RELEASE.jar:4.3.7.RELEASE]
 	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:619) ~[spring-jdbc-4.3.7.RELEASE.jar:4.3.7.RELEASE]
 	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:684) ~[spring-jdbc-4.3.7.RELEASE.jar:4.3.7.RELEASE]
@@ -170,8 +171,17 @@ Caused by: org.springframework.jdbc.CannotGetJdbcConnectionException: Could not 
 	at org.springframework.security.test.context.support.WithUserDetailsSecurityContextFactory.createSecurityContext(WithUserDetailsSecurityContextFactory.java:39) ~[spring-security-test-4.2.2.RELEASE.jar:4.2.2.RELEASE]
 	at org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener.createSecurityContext(WithSecurityContextTestExecutionListener.java:96) ~[spring-security-test-4.2.2.RELEASE.jar:4.2.2.RELEASE]
 	... 25 common frames omitted
-Caused by: java.sql.SQLException: No suitable driver found for postgres://vjxcwkiilteanj:e2d9316253c0eb936edd3d5d85eddc3eca429e1f39629913a96f2875bcbe4c9e@ec2-3-248-87-6.eu-west-1.compute.amazonaws.com:5432/d1bvs7c11s3o58
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:702) ~[java.sql:na]
+Caused by: org.postgresql.util.PSQLException: РћС€РёР±РєР° РїСЂРё РїРѕРїС‹С‚РєРµ РїРѕРґСЃРѕРµРґРёРЅРµРЅРёСЏ.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:225) ~[postgresql-9.3-1100-jdbc41.jar:na]
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:64) ~[postgresql-9.3-1100-jdbc41.jar:na]
+	at org.postgresql.jdbc2.AbstractJdbc2Connection.<init>(AbstractJdbc2Connection.java:136) ~[postgresql-9.3-1100-jdbc41.jar:na]
+	at org.postgresql.jdbc3.AbstractJdbc3Connection.<init>(AbstractJdbc3Connection.java:29) ~[postgresql-9.3-1100-jdbc41.jar:na]
+	at org.postgresql.jdbc3g.AbstractJdbc3gConnection.<init>(AbstractJdbc3gConnection.java:21) ~[postgresql-9.3-1100-jdbc41.jar:na]
+	at org.postgresql.jdbc4.AbstractJdbc4Connection.<init>(AbstractJdbc4Connection.java:31) ~[postgresql-9.3-1100-jdbc41.jar:na]
+	at org.postgresql.jdbc4.Jdbc4Connection.<init>(Jdbc4Connection.java:24) ~[postgresql-9.3-1100-jdbc41.jar:na]
+	at org.postgresql.Driver.makeConnection(Driver.java:410) ~[postgresql-9.3-1100-jdbc41.jar:na]
+	at org.postgresql.Driver.connect(Driver.java:280) ~[postgresql-9.3-1100-jdbc41.jar:na]
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:677) ~[java.sql:na]
 	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:189) ~[java.sql:na]
 	at org.springframework.jdbc.datasource.DriverManagerDataSource.getConnectionFromDriverManager(DriverManagerDataSource.java:153) ~[spring-jdbc-4.3.7.RELEASE.jar:4.3.7.RELEASE]
 	at org.springframework.jdbc.datasource.DriverManagerDataSource.getConnectionFromDriver(DriverManagerDataSource.java:144) ~[spring-jdbc-4.3.7.RELEASE.jar:4.3.7.RELEASE]
@@ -180,16 +190,25 @@ Caused by: java.sql.SQLException: No suitable driver found for postgres://vjxcwk
 	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:111) ~[spring-jdbc-4.3.7.RELEASE.jar:4.3.7.RELEASE]
 	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:77) ~[spring-jdbc-4.3.7.RELEASE.jar:4.3.7.RELEASE]
 	... 35 common frames omitted
+Caused by: java.net.UnknownHostException: vjxcwkiilteanj:e2d9316253c0eb936edd3d5d85eddc3eca429e1f39629913a96f2875bcbe4c9e@ec2-3-248-87-6.eu-west-1.compute.amazonaws.com
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:567) ~[na:na]
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:333) ~[na:na]
+	at java.base/java.net.Socket.connect(Socket.java:648) ~[na:na]
+	at java.base/java.net.Socket.connect(Socket.java:597) ~[na:na]
+	at org.postgresql.core.PGStream.<init>(PGStream.java:60) ~[postgresql-9.3-1100-jdbc41.jar:na]
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:101) ~[postgresql-9.3-1100-jdbc41.jar:na]
+	... 51 common frames omitted
 
 ]]></system-out>
   </testcase>
-  <testcase name="loadCardForUser" classname="com.istg.controller.CardControllerTest" time="0.072">
+  <testcase name="loadCardForUser" classname="com.istg.controller.CardControllerTest" time="0.056">
     <error message="Unable to create SecurityContext using @org.springframework.security.test.context.support.WithUserDetails(value=&quot;tom&quot;, userDetailsServiceBeanName=&quot;&quot;)" type="java.lang.IllegalStateException">java.lang.IllegalStateException: Unable to create SecurityContext using @org.springframework.security.test.context.support.WithUserDetails(value="tom", userDetailsServiceBeanName="")
-Caused by: org.springframework.jdbc.CannotGetJdbcConnectionException: Could not get JDBC Connection; nested exception is java.sql.SQLException: No suitable driver found for postgres://vjxcwkiilteanj:e2d9316253c0eb936edd3d5d85eddc3eca429e1f39629913a96f2875bcbe4c9e@ec2-3-248-87-6.eu-west-1.compute.amazonaws.com:5432/d1bvs7c11s3o58
-Caused by: java.sql.SQLException: No suitable driver found for postgres://vjxcwkiilteanj:e2d9316253c0eb936edd3d5d85eddc3eca429e1f39629913a96f2875bcbe4c9e@ec2-3-248-87-6.eu-west-1.compute.amazonaws.com:5432/d1bvs7c11s3o58
+Caused by: org.springframework.jdbc.CannotGetJdbcConnectionException: Could not get JDBC Connection; nested exception is org.postgresql.util.PSQLException: Ошибка при попытке подсоединения.
+Caused by: org.postgresql.util.PSQLException: Ошибка при попытке подсоединения.
+Caused by: java.net.UnknownHostException: vjxcwkiilteanj:e2d9316253c0eb936edd3d5d85eddc3eca429e1f39629913a96f2875bcbe4c9e@ec2-3-248-87-6.eu-west-1.compute.amazonaws.com
 </error>
-    <system-out><![CDATA[2021-11-30 22:08:01.650  INFO 4624 --- [           main] c.istg.dao.implementations.UserDaoImpl   : Get user by username - tom 2021-11-30
-2021-11-30 22:08:01.651  WARN 4624 --- [           main] o.s.test.context.TestContextManager      : Caught exception while allowing TestExecutionListener [org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener@11015ca0] to process 'before' execution of test method [public void com.istg.controller.CardControllerTest.loadCardForUser() throws java.lang.Exception] for test instance [com.istg.controller.CardControllerTest@7d6019d5]
+    <system-out><![CDATA[2021-11-30 22:25:02.781  INFO 4620 --- [           main] c.istg.dao.implementations.UserDaoImpl   : Get user by username - tom 2021-11-30
+2021-11-30 22:25:02.782  WARN 4620 --- [           main] o.s.test.context.TestContextManager      : Caught exception while allowing TestExecutionListener [org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener@3e6acec2] to process 'before' execution of test method [public void com.istg.controller.CardControllerTest.loadCardForUser() throws java.lang.Exception] for test instance [com.istg.controller.CardControllerTest@4067634b]
 
 java.lang.IllegalStateException: Unable to create SecurityContext using @org.springframework.security.test.context.support.WithUserDetails(value="tom", userDetailsServiceBeanName="")
 	at org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener.createSecurityContext(WithSecurityContextTestExecutionListener.java:99) ~[spring-security-test-4.2.2.RELEASE.jar:4.2.2.RELEASE]
@@ -218,7 +237,7 @@ java.lang.IllegalStateException: Unable to create SecurityContext using @org.spr
 	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290) ~[surefire-booter-2.19.1.jar:2.19.1]
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242) ~[surefire-booter-2.19.1.jar:2.19.1]
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121) ~[surefire-booter-2.19.1.jar:2.19.1]
-Caused by: org.springframework.jdbc.CannotGetJdbcConnectionException: Could not get JDBC Connection; nested exception is java.sql.SQLException: No suitable driver found for postgres://vjxcwkiilteanj:e2d9316253c0eb936edd3d5d85eddc3eca429e1f39629913a96f2875bcbe4c9e@ec2-3-248-87-6.eu-west-1.compute.amazonaws.com:5432/d1bvs7c11s3o58
+Caused by: org.springframework.jdbc.CannotGetJdbcConnectionException: Could not get JDBC Connection; nested exception is org.postgresql.util.PSQLException: РћС€РёР±РєР° РїСЂРё РїРѕРїС‹С‚РєРµ РїРѕРґСЃРѕРµРґРёРЅРµРЅРёСЏ.
 	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:80) ~[spring-jdbc-4.3.7.RELEASE.jar:4.3.7.RELEASE]
 	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:619) ~[spring-jdbc-4.3.7.RELEASE.jar:4.3.7.RELEASE]
 	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:684) ~[spring-jdbc-4.3.7.RELEASE.jar:4.3.7.RELEASE]
@@ -231,8 +250,17 @@ Caused by: org.springframework.jdbc.CannotGetJdbcConnectionException: Could not 
 	at org.springframework.security.test.context.support.WithUserDetailsSecurityContextFactory.createSecurityContext(WithUserDetailsSecurityContextFactory.java:39) ~[spring-security-test-4.2.2.RELEASE.jar:4.2.2.RELEASE]
 	at org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener.createSecurityContext(WithSecurityContextTestExecutionListener.java:96) ~[spring-security-test-4.2.2.RELEASE.jar:4.2.2.RELEASE]
 	... 25 common frames omitted
-Caused by: java.sql.SQLException: No suitable driver found for postgres://vjxcwkiilteanj:e2d9316253c0eb936edd3d5d85eddc3eca429e1f39629913a96f2875bcbe4c9e@ec2-3-248-87-6.eu-west-1.compute.amazonaws.com:5432/d1bvs7c11s3o58
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:702) ~[java.sql:na]
+Caused by: org.postgresql.util.PSQLException: РћС€РёР±РєР° РїСЂРё РїРѕРїС‹С‚РєРµ РїРѕРґСЃРѕРµРґРёРЅРµРЅРёСЏ.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:225) ~[postgresql-9.3-1100-jdbc41.jar:na]
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:64) ~[postgresql-9.3-1100-jdbc41.jar:na]
+	at org.postgresql.jdbc2.AbstractJdbc2Connection.<init>(AbstractJdbc2Connection.java:136) ~[postgresql-9.3-1100-jdbc41.jar:na]
+	at org.postgresql.jdbc3.AbstractJdbc3Connection.<init>(AbstractJdbc3Connection.java:29) ~[postgresql-9.3-1100-jdbc41.jar:na]
+	at org.postgresql.jdbc3g.AbstractJdbc3gConnection.<init>(AbstractJdbc3gConnection.java:21) ~[postgresql-9.3-1100-jdbc41.jar:na]
+	at org.postgresql.jdbc4.AbstractJdbc4Connection.<init>(AbstractJdbc4Connection.java:31) ~[postgresql-9.3-1100-jdbc41.jar:na]
+	at org.postgresql.jdbc4.Jdbc4Connection.<init>(Jdbc4Connection.java:24) ~[postgresql-9.3-1100-jdbc41.jar:na]
+	at org.postgresql.Driver.makeConnection(Driver.java:410) ~[postgresql-9.3-1100-jdbc41.jar:na]
+	at org.postgresql.Driver.connect(Driver.java:280) ~[postgresql-9.3-1100-jdbc41.jar:na]
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:677) ~[java.sql:na]
 	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:189) ~[java.sql:na]
 	at org.springframework.jdbc.datasource.DriverManagerDataSource.getConnectionFromDriverManager(DriverManagerDataSource.java:153) ~[spring-jdbc-4.3.7.RELEASE.jar:4.3.7.RELEASE]
 	at org.springframework.jdbc.datasource.DriverManagerDataSource.getConnectionFromDriver(DriverManagerDataSource.java:144) ~[spring-jdbc-4.3.7.RELEASE.jar:4.3.7.RELEASE]
@@ -241,16 +269,25 @@ Caused by: java.sql.SQLException: No suitable driver found for postgres://vjxcwk
 	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:111) ~[spring-jdbc-4.3.7.RELEASE.jar:4.3.7.RELEASE]
 	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:77) ~[spring-jdbc-4.3.7.RELEASE.jar:4.3.7.RELEASE]
 	... 35 common frames omitted
+Caused by: java.net.UnknownHostException: vjxcwkiilteanj:e2d9316253c0eb936edd3d5d85eddc3eca429e1f39629913a96f2875bcbe4c9e@ec2-3-248-87-6.eu-west-1.compute.amazonaws.com
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:567) ~[na:na]
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:333) ~[na:na]
+	at java.base/java.net.Socket.connect(Socket.java:648) ~[na:na]
+	at java.base/java.net.Socket.connect(Socket.java:597) ~[na:na]
+	at org.postgresql.core.PGStream.<init>(PGStream.java:60) ~[postgresql-9.3-1100-jdbc41.jar:na]
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:101) ~[postgresql-9.3-1100-jdbc41.jar:na]
+	... 51 common frames omitted
 
 ]]></system-out>
   </testcase>
-  <testcase name="addDelete" classname="com.istg.controller.CardControllerTest" time="0.02">
+  <testcase name="addDelete" classname="com.istg.controller.CardControllerTest" time="0.037">
     <error message="Unable to create SecurityContext using @org.springframework.security.test.context.support.WithUserDetails(value=&quot;tom&quot;, userDetailsServiceBeanName=&quot;&quot;)" type="java.lang.IllegalStateException">java.lang.IllegalStateException: Unable to create SecurityContext using @org.springframework.security.test.context.support.WithUserDetails(value="tom", userDetailsServiceBeanName="")
-Caused by: org.springframework.jdbc.CannotGetJdbcConnectionException: Could not get JDBC Connection; nested exception is java.sql.SQLException: No suitable driver found for postgres://vjxcwkiilteanj:e2d9316253c0eb936edd3d5d85eddc3eca429e1f39629913a96f2875bcbe4c9e@ec2-3-248-87-6.eu-west-1.compute.amazonaws.com:5432/d1bvs7c11s3o58
-Caused by: java.sql.SQLException: No suitable driver found for postgres://vjxcwkiilteanj:e2d9316253c0eb936edd3d5d85eddc3eca429e1f39629913a96f2875bcbe4c9e@ec2-3-248-87-6.eu-west-1.compute.amazonaws.com:5432/d1bvs7c11s3o58
+Caused by: org.springframework.jdbc.CannotGetJdbcConnectionException: Could not get JDBC Connection; nested exception is org.postgresql.util.PSQLException: Ошибка при попытке подсоединения.
+Caused by: org.postgresql.util.PSQLException: Ошибка при попытке подсоединения.
+Caused by: java.net.UnknownHostException: vjxcwkiilteanj:e2d9316253c0eb936edd3d5d85eddc3eca429e1f39629913a96f2875bcbe4c9e@ec2-3-248-87-6.eu-west-1.compute.amazonaws.com
 </error>
-    <system-out><![CDATA[2021-11-30 22:08:01.656  INFO 4624 --- [           main] c.istg.dao.implementations.UserDaoImpl   : Get user by username - tom 2021-11-30
-2021-11-30 22:08:01.657  WARN 4624 --- [           main] o.s.test.context.TestContextManager      : Caught exception while allowing TestExecutionListener [org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener@11015ca0] to process 'before' execution of test method [public void com.istg.controller.CardControllerTest.addDelete() throws java.lang.Exception] for test instance [com.istg.controller.CardControllerTest@5badeda0]
+    <system-out><![CDATA[2021-11-30 22:25:02.788  INFO 4620 --- [           main] c.istg.dao.implementations.UserDaoImpl   : Get user by username - tom 2021-11-30
+2021-11-30 22:25:02.790  WARN 4620 --- [           main] o.s.test.context.TestContextManager      : Caught exception while allowing TestExecutionListener [org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener@3e6acec2] to process 'before' execution of test method [public void com.istg.controller.CardControllerTest.addDelete() throws java.lang.Exception] for test instance [com.istg.controller.CardControllerTest@20afd96f]
 
 java.lang.IllegalStateException: Unable to create SecurityContext using @org.springframework.security.test.context.support.WithUserDetails(value="tom", userDetailsServiceBeanName="")
 	at org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener.createSecurityContext(WithSecurityContextTestExecutionListener.java:99) ~[spring-security-test-4.2.2.RELEASE.jar:4.2.2.RELEASE]
@@ -279,7 +316,7 @@ java.lang.IllegalStateException: Unable to create SecurityContext using @org.spr
 	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290) ~[surefire-booter-2.19.1.jar:2.19.1]
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242) ~[surefire-booter-2.19.1.jar:2.19.1]
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121) ~[surefire-booter-2.19.1.jar:2.19.1]
-Caused by: org.springframework.jdbc.CannotGetJdbcConnectionException: Could not get JDBC Connection; nested exception is java.sql.SQLException: No suitable driver found for postgres://vjxcwkiilteanj:e2d9316253c0eb936edd3d5d85eddc3eca429e1f39629913a96f2875bcbe4c9e@ec2-3-248-87-6.eu-west-1.compute.amazonaws.com:5432/d1bvs7c11s3o58
+Caused by: org.springframework.jdbc.CannotGetJdbcConnectionException: Could not get JDBC Connection; nested exception is org.postgresql.util.PSQLException: РћС€РёР±РєР° РїСЂРё РїРѕРїС‹С‚РєРµ РїРѕРґСЃРѕРµРґРёРЅРµРЅРёСЏ.
 	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:80) ~[spring-jdbc-4.3.7.RELEASE.jar:4.3.7.RELEASE]
 	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:619) ~[spring-jdbc-4.3.7.RELEASE.jar:4.3.7.RELEASE]
 	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:684) ~[spring-jdbc-4.3.7.RELEASE.jar:4.3.7.RELEASE]
@@ -292,8 +329,17 @@ Caused by: org.springframework.jdbc.CannotGetJdbcConnectionException: Could not 
 	at org.springframework.security.test.context.support.WithUserDetailsSecurityContextFactory.createSecurityContext(WithUserDetailsSecurityContextFactory.java:39) ~[spring-security-test-4.2.2.RELEASE.jar:4.2.2.RELEASE]
 	at org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener.createSecurityContext(WithSecurityContextTestExecutionListener.java:96) ~[spring-security-test-4.2.2.RELEASE.jar:4.2.2.RELEASE]
 	... 25 common frames omitted
-Caused by: java.sql.SQLException: No suitable driver found for postgres://vjxcwkiilteanj:e2d9316253c0eb936edd3d5d85eddc3eca429e1f39629913a96f2875bcbe4c9e@ec2-3-248-87-6.eu-west-1.compute.amazonaws.com:5432/d1bvs7c11s3o58
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:702) ~[java.sql:na]
+Caused by: org.postgresql.util.PSQLException: РћС€РёР±РєР° РїСЂРё РїРѕРїС‹С‚РєРµ РїРѕРґСЃРѕРµРґРёРЅРµРЅРёСЏ.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:225) ~[postgresql-9.3-1100-jdbc41.jar:na]
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:64) ~[postgresql-9.3-1100-jdbc41.jar:na]
+	at org.postgresql.jdbc2.AbstractJdbc2Connection.<init>(AbstractJdbc2Connection.java:136) ~[postgresql-9.3-1100-jdbc41.jar:na]
+	at org.postgresql.jdbc3.AbstractJdbc3Connection.<init>(AbstractJdbc3Connection.java:29) ~[postgresql-9.3-1100-jdbc41.jar:na]
+	at org.postgresql.jdbc3g.AbstractJdbc3gConnection.<init>(AbstractJdbc3gConnection.java:21) ~[postgresql-9.3-1100-jdbc41.jar:na]
+	at org.postgresql.jdbc4.AbstractJdbc4Connection.<init>(AbstractJdbc4Connection.java:31) ~[postgresql-9.3-1100-jdbc41.jar:na]
+	at org.postgresql.jdbc4.Jdbc4Connection.<init>(Jdbc4Connection.java:24) ~[postgresql-9.3-1100-jdbc41.jar:na]
+	at org.postgresql.Driver.makeConnection(Driver.java:410) ~[postgresql-9.3-1100-jdbc41.jar:na]
+	at org.postgresql.Driver.connect(Driver.java:280) ~[postgresql-9.3-1100-jdbc41.jar:na]
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:677) ~[java.sql:na]
 	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:189) ~[java.sql:na]
 	at org.springframework.jdbc.datasource.DriverManagerDataSource.getConnectionFromDriverManager(DriverManagerDataSource.java:153) ~[spring-jdbc-4.3.7.RELEASE.jar:4.3.7.RELEASE]
 	at org.springframework.jdbc.datasource.DriverManagerDataSource.getConnectionFromDriver(DriverManagerDataSource.java:144) ~[spring-jdbc-4.3.7.RELEASE.jar:4.3.7.RELEASE]
@@ -302,16 +348,25 @@ Caused by: java.sql.SQLException: No suitable driver found for postgres://vjxcwk
 	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:111) ~[spring-jdbc-4.3.7.RELEASE.jar:4.3.7.RELEASE]
 	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:77) ~[spring-jdbc-4.3.7.RELEASE.jar:4.3.7.RELEASE]
 	... 35 common frames omitted
+Caused by: java.net.UnknownHostException: vjxcwkiilteanj:e2d9316253c0eb936edd3d5d85eddc3eca429e1f39629913a96f2875bcbe4c9e@ec2-3-248-87-6.eu-west-1.compute.amazonaws.com
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:567) ~[na:na]
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:333) ~[na:na]
+	at java.base/java.net.Socket.connect(Socket.java:648) ~[na:na]
+	at java.base/java.net.Socket.connect(Socket.java:597) ~[na:na]
+	at org.postgresql.core.PGStream.<init>(PGStream.java:60) ~[postgresql-9.3-1100-jdbc41.jar:na]
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:101) ~[postgresql-9.3-1100-jdbc41.jar:na]
+	... 51 common frames omitted
 
 ]]></system-out>
   </testcase>
-  <testcase name="orderCard" classname="com.istg.controller.CardControllerTest" time="0.015">
+  <testcase name="orderCard" classname="com.istg.controller.CardControllerTest" time="0.02">
     <error message="Unable to create SecurityContext using @org.springframework.security.test.context.support.WithUserDetails(value=&quot;tom&quot;, userDetailsServiceBeanName=&quot;&quot;)" type="java.lang.IllegalStateException">java.lang.IllegalStateException: Unable to create SecurityContext using @org.springframework.security.test.context.support.WithUserDetails(value="tom", userDetailsServiceBeanName="")
-Caused by: org.springframework.jdbc.CannotGetJdbcConnectionException: Could not get JDBC Connection; nested exception is java.sql.SQLException: No suitable driver found for postgres://vjxcwkiilteanj:e2d9316253c0eb936edd3d5d85eddc3eca429e1f39629913a96f2875bcbe4c9e@ec2-3-248-87-6.eu-west-1.compute.amazonaws.com:5432/d1bvs7c11s3o58
-Caused by: java.sql.SQLException: No suitable driver found for postgres://vjxcwkiilteanj:e2d9316253c0eb936edd3d5d85eddc3eca429e1f39629913a96f2875bcbe4c9e@ec2-3-248-87-6.eu-west-1.compute.amazonaws.com:5432/d1bvs7c11s3o58
+Caused by: org.springframework.jdbc.CannotGetJdbcConnectionException: Could not get JDBC Connection; nested exception is org.postgresql.util.PSQLException: Ошибка при попытке подсоединения.
+Caused by: org.postgresql.util.PSQLException: Ошибка при попытке подсоединения.
+Caused by: java.net.UnknownHostException: vjxcwkiilteanj:e2d9316253c0eb936edd3d5d85eddc3eca429e1f39629913a96f2875bcbe4c9e@ec2-3-248-87-6.eu-west-1.compute.amazonaws.com
 </error>
-    <system-out><![CDATA[2021-11-30 22:08:01.662  INFO 4624 --- [           main] c.istg.dao.implementations.UserDaoImpl   : Get user by username - tom 2021-11-30
-2021-11-30 22:08:01.663  WARN 4624 --- [           main] o.s.test.context.TestContextManager      : Caught exception while allowing TestExecutionListener [org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener@11015ca0] to process 'before' execution of test method [public void com.istg.controller.CardControllerTest.orderCard() throws java.lang.Exception] for test instance [com.istg.controller.CardControllerTest@1c79d093]
+    <system-out><![CDATA[2021-11-30 22:25:02.796  INFO 4620 --- [           main] c.istg.dao.implementations.UserDaoImpl   : Get user by username - tom 2021-11-30
+2021-11-30 22:25:02.798  WARN 4620 --- [           main] o.s.test.context.TestContextManager      : Caught exception while allowing TestExecutionListener [org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener@3e6acec2] to process 'before' execution of test method [public void com.istg.controller.CardControllerTest.orderCard() throws java.lang.Exception] for test instance [com.istg.controller.CardControllerTest@3a9c92b5]
 
 java.lang.IllegalStateException: Unable to create SecurityContext using @org.springframework.security.test.context.support.WithUserDetails(value="tom", userDetailsServiceBeanName="")
 	at org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener.createSecurityContext(WithSecurityContextTestExecutionListener.java:99) ~[spring-security-test-4.2.2.RELEASE.jar:4.2.2.RELEASE]
@@ -340,7 +395,7 @@ java.lang.IllegalStateException: Unable to create SecurityContext using @org.spr
 	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290) ~[surefire-booter-2.19.1.jar:2.19.1]
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242) ~[surefire-booter-2.19.1.jar:2.19.1]
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121) ~[surefire-booter-2.19.1.jar:2.19.1]
-Caused by: org.springframework.jdbc.CannotGetJdbcConnectionException: Could not get JDBC Connection; nested exception is java.sql.SQLException: No suitable driver found for postgres://vjxcwkiilteanj:e2d9316253c0eb936edd3d5d85eddc3eca429e1f39629913a96f2875bcbe4c9e@ec2-3-248-87-6.eu-west-1.compute.amazonaws.com:5432/d1bvs7c11s3o58
+Caused by: org.springframework.jdbc.CannotGetJdbcConnectionException: Could not get JDBC Connection; nested exception is org.postgresql.util.PSQLException: РћС€РёР±РєР° РїСЂРё РїРѕРїС‹С‚РєРµ РїРѕРґСЃРѕРµРґРёРЅРµРЅРёСЏ.
 	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:80) ~[spring-jdbc-4.3.7.RELEASE.jar:4.3.7.RELEASE]
 	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:619) ~[spring-jdbc-4.3.7.RELEASE.jar:4.3.7.RELEASE]
 	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:684) ~[spring-jdbc-4.3.7.RELEASE.jar:4.3.7.RELEASE]
@@ -353,8 +408,17 @@ Caused by: org.springframework.jdbc.CannotGetJdbcConnectionException: Could not 
 	at org.springframework.security.test.context.support.WithUserDetailsSecurityContextFactory.createSecurityContext(WithUserDetailsSecurityContextFactory.java:39) ~[spring-security-test-4.2.2.RELEASE.jar:4.2.2.RELEASE]
 	at org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener.createSecurityContext(WithSecurityContextTestExecutionListener.java:96) ~[spring-security-test-4.2.2.RELEASE.jar:4.2.2.RELEASE]
 	... 25 common frames omitted
-Caused by: java.sql.SQLException: No suitable driver found for postgres://vjxcwkiilteanj:e2d9316253c0eb936edd3d5d85eddc3eca429e1f39629913a96f2875bcbe4c9e@ec2-3-248-87-6.eu-west-1.compute.amazonaws.com:5432/d1bvs7c11s3o58
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:702) ~[java.sql:na]
+Caused by: org.postgresql.util.PSQLException: РћС€РёР±РєР° РїСЂРё РїРѕРїС‹С‚РєРµ РїРѕРґСЃРѕРµРґРёРЅРµРЅРёСЏ.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:225) ~[postgresql-9.3-1100-jdbc41.jar:na]
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:64) ~[postgresql-9.3-1100-jdbc41.jar:na]
+	at org.postgresql.jdbc2.AbstractJdbc2Connection.<init>(AbstractJdbc2Connection.java:136) ~[postgresql-9.3-1100-jdbc41.jar:na]
+	at org.postgresql.jdbc3.AbstractJdbc3Connection.<init>(AbstractJdbc3Connection.java:29) ~[postgresql-9.3-1100-jdbc41.jar:na]
+	at org.postgresql.jdbc3g.AbstractJdbc3gConnection.<init>(AbstractJdbc3gConnection.java:21) ~[postgresql-9.3-1100-jdbc41.jar:na]
+	at org.postgresql.jdbc4.AbstractJdbc4Connection.<init>(AbstractJdbc4Connection.java:31) ~[postgresql-9.3-1100-jdbc41.jar:na]
+	at org.postgresql.jdbc4.Jdbc4Connection.<init>(Jdbc4Connection.java:24) ~[postgresql-9.3-1100-jdbc41.jar:na]
+	at org.postgresql.Driver.makeConnection(Driver.java:410) ~[postgresql-9.3-1100-jdbc41.jar:na]
+	at org.postgresql.Driver.connect(Driver.java:280) ~[postgresql-9.3-1100-jdbc41.jar:na]
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:677) ~[java.sql:na]
 	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:189) ~[java.sql:na]
 	at org.springframework.jdbc.datasource.DriverManagerDataSource.getConnectionFromDriverManager(DriverManagerDataSource.java:153) ~[spring-jdbc-4.3.7.RELEASE.jar:4.3.7.RELEASE]
 	at org.springframework.jdbc.datasource.DriverManagerDataSource.getConnectionFromDriver(DriverManagerDataSource.java:144) ~[spring-jdbc-4.3.7.RELEASE.jar:4.3.7.RELEASE]
@@ -363,16 +427,25 @@ Caused by: java.sql.SQLException: No suitable driver found for postgres://vjxcwk
 	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:111) ~[spring-jdbc-4.3.7.RELEASE.jar:4.3.7.RELEASE]
 	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:77) ~[spring-jdbc-4.3.7.RELEASE.jar:4.3.7.RELEASE]
 	... 35 common frames omitted
+Caused by: java.net.UnknownHostException: vjxcwkiilteanj:e2d9316253c0eb936edd3d5d85eddc3eca429e1f39629913a96f2875bcbe4c9e@ec2-3-248-87-6.eu-west-1.compute.amazonaws.com
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:567) ~[na:na]
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:333) ~[na:na]
+	at java.base/java.net.Socket.connect(Socket.java:648) ~[na:na]
+	at java.base/java.net.Socket.connect(Socket.java:597) ~[na:na]
+	at org.postgresql.core.PGStream.<init>(PGStream.java:60) ~[postgresql-9.3-1100-jdbc41.jar:na]
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:101) ~[postgresql-9.3-1100-jdbc41.jar:na]
+	... 51 common frames omitted
 
 ]]></system-out>
   </testcase>
-  <testcase name="loadCardForUserNodeCount" classname="com.istg.controller.CardControllerTest" time="0.026">
+  <testcase name="loadCardForUserNodeCount" classname="com.istg.controller.CardControllerTest" time="0.019">
     <error message="Unable to create SecurityContext using @org.springframework.security.test.context.support.WithUserDetails(value=&quot;tom&quot;, userDetailsServiceBeanName=&quot;&quot;)" type="java.lang.IllegalStateException">java.lang.IllegalStateException: Unable to create SecurityContext using @org.springframework.security.test.context.support.WithUserDetails(value="tom", userDetailsServiceBeanName="")
-Caused by: org.springframework.jdbc.CannotGetJdbcConnectionException: Could not get JDBC Connection; nested exception is java.sql.SQLException: No suitable driver found for postgres://vjxcwkiilteanj:e2d9316253c0eb936edd3d5d85eddc3eca429e1f39629913a96f2875bcbe4c9e@ec2-3-248-87-6.eu-west-1.compute.amazonaws.com:5432/d1bvs7c11s3o58
-Caused by: java.sql.SQLException: No suitable driver found for postgres://vjxcwkiilteanj:e2d9316253c0eb936edd3d5d85eddc3eca429e1f39629913a96f2875bcbe4c9e@ec2-3-248-87-6.eu-west-1.compute.amazonaws.com:5432/d1bvs7c11s3o58
+Caused by: org.springframework.jdbc.CannotGetJdbcConnectionException: Could not get JDBC Connection; nested exception is org.postgresql.util.PSQLException: Ошибка при попытке подсоединения.
+Caused by: org.postgresql.util.PSQLException: Ошибка при попытке подсоединения.
+Caused by: java.net.UnknownHostException: vjxcwkiilteanj:e2d9316253c0eb936edd3d5d85eddc3eca429e1f39629913a96f2875bcbe4c9e@ec2-3-248-87-6.eu-west-1.compute.amazonaws.com
 </error>
-    <system-out><![CDATA[2021-11-30 22:08:01.669  INFO 4624 --- [           main] c.istg.dao.implementations.UserDaoImpl   : Get user by username - tom 2021-11-30
-2021-11-30 22:08:01.671  WARN 4624 --- [           main] o.s.test.context.TestContextManager      : Caught exception while allowing TestExecutionListener [org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener@11015ca0] to process 'before' execution of test method [public void com.istg.controller.CardControllerTest.loadCardForUserNodeCount() throws java.lang.Exception] for test instance [com.istg.controller.CardControllerTest@665ed71a]
+    <system-out><![CDATA[2021-11-30 22:25:02.809  INFO 4620 --- [           main] c.istg.dao.implementations.UserDaoImpl   : Get user by username - tom 2021-11-30
+2021-11-30 22:25:02.812  WARN 4620 --- [           main] o.s.test.context.TestContextManager      : Caught exception while allowing TestExecutionListener [org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener@3e6acec2] to process 'before' execution of test method [public void com.istg.controller.CardControllerTest.loadCardForUserNodeCount() throws java.lang.Exception] for test instance [com.istg.controller.CardControllerTest@405223e4]
 
 java.lang.IllegalStateException: Unable to create SecurityContext using @org.springframework.security.test.context.support.WithUserDetails(value="tom", userDetailsServiceBeanName="")
 	at org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener.createSecurityContext(WithSecurityContextTestExecutionListener.java:99) ~[spring-security-test-4.2.2.RELEASE.jar:4.2.2.RELEASE]
@@ -401,7 +474,7 @@ java.lang.IllegalStateException: Unable to create SecurityContext using @org.spr
 	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290) ~[surefire-booter-2.19.1.jar:2.19.1]
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242) ~[surefire-booter-2.19.1.jar:2.19.1]
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121) ~[surefire-booter-2.19.1.jar:2.19.1]
-Caused by: org.springframework.jdbc.CannotGetJdbcConnectionException: Could not get JDBC Connection; nested exception is java.sql.SQLException: No suitable driver found for postgres://vjxcwkiilteanj:e2d9316253c0eb936edd3d5d85eddc3eca429e1f39629913a96f2875bcbe4c9e@ec2-3-248-87-6.eu-west-1.compute.amazonaws.com:5432/d1bvs7c11s3o58
+Caused by: org.springframework.jdbc.CannotGetJdbcConnectionException: Could not get JDBC Connection; nested exception is org.postgresql.util.PSQLException: РћС€РёР±РєР° РїСЂРё РїРѕРїС‹С‚РєРµ РїРѕРґСЃРѕРµРґРёРЅРµРЅРёСЏ.
 	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:80) ~[spring-jdbc-4.3.7.RELEASE.jar:4.3.7.RELEASE]
 	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:619) ~[spring-jdbc-4.3.7.RELEASE.jar:4.3.7.RELEASE]
 	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:684) ~[spring-jdbc-4.3.7.RELEASE.jar:4.3.7.RELEASE]
@@ -414,8 +487,17 @@ Caused by: org.springframework.jdbc.CannotGetJdbcConnectionException: Could not 
 	at org.springframework.security.test.context.support.WithUserDetailsSecurityContextFactory.createSecurityContext(WithUserDetailsSecurityContextFactory.java:39) ~[spring-security-test-4.2.2.RELEASE.jar:4.2.2.RELEASE]
 	at org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener.createSecurityContext(WithSecurityContextTestExecutionListener.java:96) ~[spring-security-test-4.2.2.RELEASE.jar:4.2.2.RELEASE]
 	... 25 common frames omitted
-Caused by: java.sql.SQLException: No suitable driver found for postgres://vjxcwkiilteanj:e2d9316253c0eb936edd3d5d85eddc3eca429e1f39629913a96f2875bcbe4c9e@ec2-3-248-87-6.eu-west-1.compute.amazonaws.com:5432/d1bvs7c11s3o58
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:702) ~[java.sql:na]
+Caused by: org.postgresql.util.PSQLException: РћС€РёР±РєР° РїСЂРё РїРѕРїС‹С‚РєРµ РїРѕРґСЃРѕРµРґРёРЅРµРЅРёСЏ.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:225) ~[postgresql-9.3-1100-jdbc41.jar:na]
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:64) ~[postgresql-9.3-1100-jdbc41.jar:na]
+	at org.postgresql.jdbc2.AbstractJdbc2Connection.<init>(AbstractJdbc2Connection.java:136) ~[postgresql-9.3-1100-jdbc41.jar:na]
+	at org.postgresql.jdbc3.AbstractJdbc3Connection.<init>(AbstractJdbc3Connection.java:29) ~[postgresql-9.3-1100-jdbc41.jar:na]
+	at org.postgresql.jdbc3g.AbstractJdbc3gConnection.<init>(AbstractJdbc3gConnection.java:21) ~[postgresql-9.3-1100-jdbc41.jar:na]
+	at org.postgresql.jdbc4.AbstractJdbc4Connection.<init>(AbstractJdbc4Connection.java:31) ~[postgresql-9.3-1100-jdbc41.jar:na]
+	at org.postgresql.jdbc4.Jdbc4Connection.<init>(Jdbc4Connection.java:24) ~[postgresql-9.3-1100-jdbc41.jar:na]
+	at org.postgresql.Driver.makeConnection(Driver.java:410) ~[postgresql-9.3-1100-jdbc41.jar:na]
+	at org.postgresql.Driver.connect(Driver.java:280) ~[postgresql-9.3-1100-jdbc41.jar:na]
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:677) ~[java.sql:na]
 	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:189) ~[java.sql:na]
 	at org.springframework.jdbc.datasource.DriverManagerDataSource.getConnectionFromDriverManager(DriverManagerDataSource.java:153) ~[spring-jdbc-4.3.7.RELEASE.jar:4.3.7.RELEASE]
 	at org.springframework.jdbc.datasource.DriverManagerDataSource.getConnectionFromDriver(DriverManagerDataSource.java:144) ~[spring-jdbc-4.3.7.RELEASE.jar:4.3.7.RELEASE]
@@ -424,16 +506,25 @@ Caused by: java.sql.SQLException: No suitable driver found for postgres://vjxcwk
 	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:111) ~[spring-jdbc-4.3.7.RELEASE.jar:4.3.7.RELEASE]
 	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:77) ~[spring-jdbc-4.3.7.RELEASE.jar:4.3.7.RELEASE]
 	... 35 common frames omitted
+Caused by: java.net.UnknownHostException: vjxcwkiilteanj:e2d9316253c0eb936edd3d5d85eddc3eca429e1f39629913a96f2875bcbe4c9e@ec2-3-248-87-6.eu-west-1.compute.amazonaws.com
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:567) ~[na:na]
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:333) ~[na:na]
+	at java.base/java.net.Socket.connect(Socket.java:648) ~[na:na]
+	at java.base/java.net.Socket.connect(Socket.java:597) ~[na:na]
+	at org.postgresql.core.PGStream.<init>(PGStream.java:60) ~[postgresql-9.3-1100-jdbc41.jar:na]
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:101) ~[postgresql-9.3-1100-jdbc41.jar:na]
+	... 51 common frames omitted
 
 ]]></system-out>
   </testcase>
-  <testcase name="addGametoCard" classname="com.istg.controller.CardControllerTest" time="0.016">
+  <testcase name="addGametoCard" classname="com.istg.controller.CardControllerTest" time="0.019">
     <error message="Unable to create SecurityContext using @org.springframework.security.test.context.support.WithUserDetails(value=&quot;tom&quot;, userDetailsServiceBeanName=&quot;&quot;)" type="java.lang.IllegalStateException">java.lang.IllegalStateException: Unable to create SecurityContext using @org.springframework.security.test.context.support.WithUserDetails(value="tom", userDetailsServiceBeanName="")
-Caused by: org.springframework.jdbc.CannotGetJdbcConnectionException: Could not get JDBC Connection; nested exception is java.sql.SQLException: No suitable driver found for postgres://vjxcwkiilteanj:e2d9316253c0eb936edd3d5d85eddc3eca429e1f39629913a96f2875bcbe4c9e@ec2-3-248-87-6.eu-west-1.compute.amazonaws.com:5432/d1bvs7c11s3o58
-Caused by: java.sql.SQLException: No suitable driver found for postgres://vjxcwkiilteanj:e2d9316253c0eb936edd3d5d85eddc3eca429e1f39629913a96f2875bcbe4c9e@ec2-3-248-87-6.eu-west-1.compute.amazonaws.com:5432/d1bvs7c11s3o58
+Caused by: org.springframework.jdbc.CannotGetJdbcConnectionException: Could not get JDBC Connection; nested exception is org.postgresql.util.PSQLException: Ошибка при попытке подсоединения.
+Caused by: org.postgresql.util.PSQLException: Ошибка при попытке подсоединения.
+Caused by: java.net.UnknownHostException: vjxcwkiilteanj:e2d9316253c0eb936edd3d5d85eddc3eca429e1f39629913a96f2875bcbe4c9e@ec2-3-248-87-6.eu-west-1.compute.amazonaws.com
 </error>
-    <system-out><![CDATA[2021-11-30 22:08:01.676  INFO 4624 --- [           main] c.istg.dao.implementations.UserDaoImpl   : Get user by username - tom 2021-11-30
-2021-11-30 22:08:01.677  WARN 4624 --- [           main] o.s.test.context.TestContextManager      : Caught exception while allowing TestExecutionListener [org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener@11015ca0] to process 'before' execution of test method [public void com.istg.controller.CardControllerTest.addGametoCard() throws java.lang.Exception] for test instance [com.istg.controller.CardControllerTest@622ba721]
+    <system-out><![CDATA[2021-11-30 22:25:02.819  INFO 4620 --- [           main] c.istg.dao.implementations.UserDaoImpl   : Get user by username - tom 2021-11-30
+2021-11-30 22:25:02.820  WARN 4620 --- [           main] o.s.test.context.TestContextManager      : Caught exception while allowing TestExecutionListener [org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener@3e6acec2] to process 'before' execution of test method [public void com.istg.controller.CardControllerTest.addGametoCard() throws java.lang.Exception] for test instance [com.istg.controller.CardControllerTest@3883031d]
 
 java.lang.IllegalStateException: Unable to create SecurityContext using @org.springframework.security.test.context.support.WithUserDetails(value="tom", userDetailsServiceBeanName="")
 	at org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener.createSecurityContext(WithSecurityContextTestExecutionListener.java:99) ~[spring-security-test-4.2.2.RELEASE.jar:4.2.2.RELEASE]
@@ -462,7 +553,7 @@ java.lang.IllegalStateException: Unable to create SecurityContext using @org.spr
 	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290) ~[surefire-booter-2.19.1.jar:2.19.1]
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242) ~[surefire-booter-2.19.1.jar:2.19.1]
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121) ~[surefire-booter-2.19.1.jar:2.19.1]
-Caused by: org.springframework.jdbc.CannotGetJdbcConnectionException: Could not get JDBC Connection; nested exception is java.sql.SQLException: No suitable driver found for postgres://vjxcwkiilteanj:e2d9316253c0eb936edd3d5d85eddc3eca429e1f39629913a96f2875bcbe4c9e@ec2-3-248-87-6.eu-west-1.compute.amazonaws.com:5432/d1bvs7c11s3o58
+Caused by: org.springframework.jdbc.CannotGetJdbcConnectionException: Could not get JDBC Connection; nested exception is org.postgresql.util.PSQLException: РћС€РёР±РєР° РїСЂРё РїРѕРїС‹С‚РєРµ РїРѕРґСЃРѕРµРґРёРЅРµРЅРёСЏ.
 	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:80) ~[spring-jdbc-4.3.7.RELEASE.jar:4.3.7.RELEASE]
 	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:619) ~[spring-jdbc-4.3.7.RELEASE.jar:4.3.7.RELEASE]
 	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:684) ~[spring-jdbc-4.3.7.RELEASE.jar:4.3.7.RELEASE]
@@ -475,8 +566,17 @@ Caused by: org.springframework.jdbc.CannotGetJdbcConnectionException: Could not 
 	at org.springframework.security.test.context.support.WithUserDetailsSecurityContextFactory.createSecurityContext(WithUserDetailsSecurityContextFactory.java:39) ~[spring-security-test-4.2.2.RELEASE.jar:4.2.2.RELEASE]
 	at org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener.createSecurityContext(WithSecurityContextTestExecutionListener.java:96) ~[spring-security-test-4.2.2.RELEASE.jar:4.2.2.RELEASE]
 	... 25 common frames omitted
-Caused by: java.sql.SQLException: No suitable driver found for postgres://vjxcwkiilteanj:e2d9316253c0eb936edd3d5d85eddc3eca429e1f39629913a96f2875bcbe4c9e@ec2-3-248-87-6.eu-west-1.compute.amazonaws.com:5432/d1bvs7c11s3o58
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:702) ~[java.sql:na]
+Caused by: org.postgresql.util.PSQLException: РћС€РёР±РєР° РїСЂРё РїРѕРїС‹С‚РєРµ РїРѕРґСЃРѕРµРґРёРЅРµРЅРёСЏ.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:225) ~[postgresql-9.3-1100-jdbc41.jar:na]
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:64) ~[postgresql-9.3-1100-jdbc41.jar:na]
+	at org.postgresql.jdbc2.AbstractJdbc2Connection.<init>(AbstractJdbc2Connection.java:136) ~[postgresql-9.3-1100-jdbc41.jar:na]
+	at org.postgresql.jdbc3.AbstractJdbc3Connection.<init>(AbstractJdbc3Connection.java:29) ~[postgresql-9.3-1100-jdbc41.jar:na]
+	at org.postgresql.jdbc3g.AbstractJdbc3gConnection.<init>(AbstractJdbc3gConnection.java:21) ~[postgresql-9.3-1100-jdbc41.jar:na]
+	at org.postgresql.jdbc4.AbstractJdbc4Connection.<init>(AbstractJdbc4Connection.java:31) ~[postgresql-9.3-1100-jdbc41.jar:na]
+	at org.postgresql.jdbc4.Jdbc4Connection.<init>(Jdbc4Connection.java:24) ~[postgresql-9.3-1100-jdbc41.jar:na]
+	at org.postgresql.Driver.makeConnection(Driver.java:410) ~[postgresql-9.3-1100-jdbc41.jar:na]
+	at org.postgresql.Driver.connect(Driver.java:280) ~[postgresql-9.3-1100-jdbc41.jar:na]
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:677) ~[java.sql:na]
 	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:189) ~[java.sql:na]
 	at org.springframework.jdbc.datasource.DriverManagerDataSource.getConnectionFromDriverManager(DriverManagerDataSource.java:153) ~[spring-jdbc-4.3.7.RELEASE.jar:4.3.7.RELEASE]
 	at org.springframework.jdbc.datasource.DriverManagerDataSource.getConnectionFromDriver(DriverManagerDataSource.java:144) ~[spring-jdbc-4.3.7.RELEASE.jar:4.3.7.RELEASE]
@@ -485,6 +585,14 @@ Caused by: java.sql.SQLException: No suitable driver found for postgres://vjxcwk
 	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:111) ~[spring-jdbc-4.3.7.RELEASE.jar:4.3.7.RELEASE]
 	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:77) ~[spring-jdbc-4.3.7.RELEASE.jar:4.3.7.RELEASE]
 	... 35 common frames omitted
+Caused by: java.net.UnknownHostException: vjxcwkiilteanj:e2d9316253c0eb936edd3d5d85eddc3eca429e1f39629913a96f2875bcbe4c9e@ec2-3-248-87-6.eu-west-1.compute.amazonaws.com
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:567) ~[na:na]
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:333) ~[na:na]
+	at java.base/java.net.Socket.connect(Socket.java:648) ~[na:na]
+	at java.base/java.net.Socket.connect(Socket.java:597) ~[na:na]
+	at org.postgresql.core.PGStream.<init>(PGStream.java:60) ~[postgresql-9.3-1100-jdbc41.jar:na]
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:101) ~[postgresql-9.3-1100-jdbc41.jar:na]
+	... 51 common frames omitted
 
 ]]></system-out>
   </testcase>
