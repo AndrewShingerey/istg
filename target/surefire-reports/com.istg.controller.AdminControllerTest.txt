@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: com.istg.controller.AdminControllerTest
 -------------------------------------------------------------------------------
-Tests run: 22, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 4.273 sec <<< FAILURE! - in com.istg.controller.AdminControllerTest
-AdminPanelListCardUser(com.istg.controller.AdminControllerTest)  Time elapsed: 0.19 sec  <<< ERROR!
+Tests run: 22, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 5.656 sec <<< FAILURE! - in com.istg.controller.AdminControllerTest
+AdminPanelListCardUser(com.istg.controller.AdminControllerTest)  Time elapsed: 0.244 sec  <<< ERROR!
 org.springframework.web.util.NestedServletException: Request processing failed; nested exception is org.springframework.jdbc.CannotGetJdbcConnectionException: Could not get JDBC Connection; nested exception is org.postgresql.util.PSQLException: FATAL: no pg_hba.conf entry for host "185.128.200.20", user "vjxcwkiilteanj", database "d1bvs7c11s3o58", SSL off
 	at com.istg.controller.AdminControllerTest.AdminPanelListCardUser(AdminControllerTest.java:226)
 Caused by: org.springframework.jdbc.CannotGetJdbcConnectionException: Could not get JDBC Connection; nested exception is org.postgresql.util.PSQLException: FATAL: no pg_hba.conf entry for host "185.128.200.20", user "vjxcwkiilteanj", database "d1bvs7c11s3o58", SSL off

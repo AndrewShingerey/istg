@@ -1,33 +1,33 @@
 -------------------------------------------------------------------------------
 Test set: com.istg.controller.CardControllerTest
 -------------------------------------------------------------------------------
-Tests run: 6, Failures: 0, Errors: 6, Skipped: 0, Time elapsed: 1.88 sec <<< FAILURE! - in com.istg.controller.CardControllerTest
-orderCardFailed(com.istg.controller.CardControllerTest)  Time elapsed: 0.141 sec  <<< ERROR!
+Tests run: 6, Failures: 0, Errors: 6, Skipped: 0, Time elapsed: 2.308 sec <<< FAILURE! - in com.istg.controller.CardControllerTest
+orderCardFailed(com.istg.controller.CardControllerTest)  Time elapsed: 0.147 sec  <<< ERROR!
 java.lang.IllegalStateException: Unable to create SecurityContext using @org.springframework.security.test.context.support.WithUserDetails(value="tom", userDetailsServiceBeanName="")
 Caused by: org.springframework.jdbc.CannotGetJdbcConnectionException: Could not get JDBC Connection; nested exception is org.postgresql.util.PSQLException: FATAL: no pg_hba.conf entry for host "185.128.200.20", user "vjxcwkiilteanj", database "d1bvs7c11s3o58", SSL off
 Caused by: org.postgresql.util.PSQLException: FATAL: no pg_hba.conf entry for host "185.128.200.20", user "vjxcwkiilteanj", database "d1bvs7c11s3o58", SSL off
 
-loadCardForUser(com.istg.controller.CardControllerTest)  Time elapsed: 0.121 sec  <<< ERROR!
+loadCardForUser(com.istg.controller.CardControllerTest)  Time elapsed: 0.132 sec  <<< ERROR!
 java.lang.IllegalStateException: Unable to create SecurityContext using @org.springframework.security.test.context.support.WithUserDetails(value="tom", userDetailsServiceBeanName="")
 Caused by: org.springframework.jdbc.CannotGetJdbcConnectionException: Could not get JDBC Connection; nested exception is org.postgresql.util.PSQLException: FATAL: no pg_hba.conf entry for host "185.128.200.20", user "vjxcwkiilteanj", database "d1bvs7c11s3o58", SSL off
 Caused by: org.postgresql.util.PSQLException: FATAL: no pg_hba.conf entry for host "185.128.200.20", user "vjxcwkiilteanj", database "d1bvs7c11s3o58", SSL off
 
-addDelete(com.istg.controller.CardControllerTest)  Time elapsed: 0.118 sec  <<< ERROR!
+addDelete(com.istg.controller.CardControllerTest)  Time elapsed: 0.1 sec  <<< ERROR!
 java.lang.IllegalStateException: Unable to create SecurityContext using @org.springframework.security.test.context.support.WithUserDetails(value="tom", userDetailsServiceBeanName="")
 Caused by: org.springframework.jdbc.CannotGetJdbcConnectionException: Could not get JDBC Connection; nested exception is org.postgresql.util.PSQLException: FATAL: no pg_hba.conf entry for host "185.128.200.20", user "vjxcwkiilteanj", database "d1bvs7c11s3o58", SSL off
 Caused by: org.postgresql.util.PSQLException: FATAL: no pg_hba.conf entry for host "185.128.200.20", user "vjxcwkiilteanj", database "d1bvs7c11s3o58", SSL off
 
-orderCard(com.istg.controller.CardControllerTest)  Time elapsed: 0.115 sec  <<< ERROR!
+orderCard(com.istg.controller.CardControllerTest)  Time elapsed: 0.12 sec  <<< ERROR!
 java.lang.IllegalStateException: Unable to create SecurityContext using @org.springframework.security.test.context.support.WithUserDetails(value="tom", userDetailsServiceBeanName="")
 Caused by: org.springframework.jdbc.CannotGetJdbcConnectionException: Could not get JDBC Connection; nested exception is org.postgresql.util.PSQLException: FATAL: no pg_hba.conf entry for host "185.128.200.20", user "vjxcwkiilteanj", database "d1bvs7c11s3o58", SSL off
 Caused by: org.postgresql.util.PSQLException: FATAL: no pg_hba.conf entry for host "185.128.200.20", user "vjxcwkiilteanj", database "d1bvs7c11s3o58", SSL off
 
-loadCardForUserNodeCount(com.istg.controller.CardControllerTest)  Time elapsed: 0.101 sec  <<< ERROR!
+loadCardForUserNodeCount(com.istg.controller.CardControllerTest)  Time elapsed: 0.112 sec  <<< ERROR!
 java.lang.IllegalStateException: Unable to create SecurityContext using @org.springframework.security.test.context.support.WithUserDetails(value="tom", userDetailsServiceBeanName="")
 Caused by: org.springframework.jdbc.CannotGetJdbcConnectionException: Could not get JDBC Connection; nested exception is org.postgresql.util.PSQLException: FATAL: no pg_hba.conf entry for host "185.128.200.20", user "vjxcwkiilteanj", database "d1bvs7c11s3o58", SSL off
 Caused by: org.postgresql.util.PSQLException: FATAL: no pg_hba.conf entry for host "185.128.200.20", user "vjxcwkiilteanj", database "d1bvs7c11s3o58", SSL off
 
-addGametoCard(com.istg.controller.CardControllerTest)  Time elapsed: 0.116 sec  <<< ERROR!
+addGametoCard(com.istg.controller.CardControllerTest)  Time elapsed: 0.112 sec  <<< ERROR!
 java.lang.IllegalStateException: Unable to create SecurityContext using @org.springframework.security.test.context.support.WithUserDetails(value="tom", userDetailsServiceBeanName="")
 Caused by: org.springframework.jdbc.CannotGetJdbcConnectionException: Could not get JDBC Connection; nested exception is org.postgresql.util.PSQLException: FATAL: no pg_hba.conf entry for host "185.128.200.20", user "vjxcwkiilteanj", database "d1bvs7c11s3o58", SSL off
 Caused by: org.postgresql.util.PSQLException: FATAL: no pg_hba.conf entry for host "185.128.200.20", user "vjxcwkiilteanj", database "d1bvs7c11s3o58", SSL off
