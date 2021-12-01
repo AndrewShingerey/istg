@@ -58,12 +58,12 @@
     <property name="sun.cpu.endian" value="little"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="testSave" classname="com.istg.service.implementations.ContactUsServiceImplTest" time="0.004"/>
-  <testcase name="testGetByIdFailed" classname="com.istg.service.implementations.ContactUsServiceImplTest" time="0"/>
-  <testcase name="testGetById" classname="com.istg.service.implementations.ContactUsServiceImplTest" time="0.004"/>
+  <testcase name="testSave" classname="com.istg.service.implementations.ContactUsServiceImplTest" time="0"/>
+  <testcase name="testGetByIdFailed" classname="com.istg.service.implementations.ContactUsServiceImplTest" time="0.004"/>
+  <testcase name="testGetById" classname="com.istg.service.implementations.ContactUsServiceImplTest" time="0"/>
   <testcase name="testUpdateFailed" classname="com.istg.service.implementations.ContactUsServiceImplTest" time="0"/>
-  <testcase name="testDeleteFailed" classname="com.istg.service.implementations.ContactUsServiceImplTest" time="0"/>
-  <testcase name="testSaveFailed" classname="com.istg.service.implementations.ContactUsServiceImplTest" time="0.004"/>
+  <testcase name="testDeleteFailed" classname="com.istg.service.implementations.ContactUsServiceImplTest" time="0.004"/>
+  <testcase name="testSaveFailed" classname="com.istg.service.implementations.ContactUsServiceImplTest" time="0"/>
   <testcase name="testDelete" classname="com.istg.service.implementations.ContactUsServiceImplTest" time="0"/>
   <testcase name="testGetAll" classname="com.istg.service.implementations.ContactUsServiceImplTest" time="0.004"/>
   <testcase name="testUpdate" classname="com.istg.service.implementations.ContactUsServiceImplTest" time="0"/>

@@ -3,7 +3,7 @@ INSERT INTO Roles
 SELECT 1, 'USER'
     WHERE
     NOT EXISTS (
-        SELECT id FROM roles WHERE id_role = 1
+        SELECT id_role FROM roles WHERE id_role = 1
     );
 
 INSERT INTO Roles
@@ -11,7 +11,7 @@ INSERT INTO Roles
 SELECT 2, 'ADMIN'
     WHERE
     NOT EXISTS (
-        SELECT id FROM roles WHERE id_role = 2
+        SELECT id_role FROM roles WHERE id_role = 2
     );
 
 INSERT INTO TypeGame
