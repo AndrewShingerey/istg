@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.istg.controller.AdminControllerTest" time="5.656" tests="22" errors="1" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.istg.controller.AdminControllerTest" time="5.446" tests="22" errors="1" skipped="0" failures="0">
   <properties>
     <property name="idea.version" value="2021.1.3"/>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
@@ -58,11 +58,11 @@
     <property name="sun.cpu.endian" value="little"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="AdminPanelListCheckoutOrderDelete" classname="com.istg.controller.AdminControllerTest" time="0.12"/>
+  <testcase name="AdminPanelListCheckoutOrderDelete" classname="com.istg.controller.AdminControllerTest" time="0.124"/>
   <testcase name="AdminPanelListCheckoutOrderCountNode" classname="com.istg.controller.AdminControllerTest" time="0.176"/>
-  <testcase name="AdminPanelDeleteGame" classname="com.istg.controller.AdminControllerTest" time="0.012"/>
+  <testcase name="AdminPanelDeleteGame" classname="com.istg.controller.AdminControllerTest" time="0.008"/>
   <testcase name="homeAdminPageCountLink" classname="com.istg.controller.AdminControllerTest" time="0.04"/>
-  <testcase name="AdminPanelListCardUser" classname="com.istg.controller.AdminControllerTest" time="0.244">
+  <testcase name="AdminPanelListCardUser" classname="com.istg.controller.AdminControllerTest" time="0.208">
     <error message="Request processing failed; nested exception is org.springframework.jdbc.CannotGetJdbcConnectionException: Could not get JDBC Connection; nested exception is org.postgresql.util.PSQLException: FATAL: no pg_hba.conf entry for host &quot;185.128.200.20&quot;, user &quot;vjxcwkiilteanj&quot;, database &quot;d1bvs7c11s3o58&quot;, SSL off" type="org.springframework.web.util.NestedServletException">org.springframework.web.util.NestedServletException: Request processing failed; nested exception is org.springframework.jdbc.CannotGetJdbcConnectionException: Could not get JDBC Connection; nested exception is org.postgresql.util.PSQLException: FATAL: no pg_hba.conf entry for host "185.128.200.20", user "vjxcwkiilteanj", database "d1bvs7c11s3o58", SSL off
 	at com.istg.controller.AdminControllerTest.AdminPanelListCardUser(AdminControllerTest.java:226)
 Caused by: org.springframework.jdbc.CannotGetJdbcConnectionException: Could not get JDBC Connection; nested exception is org.postgresql.util.PSQLException: FATAL: no pg_hba.conf entry for host "185.128.200.20", user "vjxcwkiilteanj", database "d1bvs7c11s3o58", SSL off
@@ -70,7 +70,7 @@ Caused by: org.springframework.jdbc.CannotGetJdbcConnectionException: Could not 
 Caused by: org.postgresql.util.PSQLException: FATAL: no pg_hba.conf entry for host "185.128.200.20", user "vjxcwkiilteanj", database "d1bvs7c11s3o58", SSL off
 	at com.istg.controller.AdminControllerTest.AdminPanelListCardUser(AdminControllerTest.java:226)
 </error>
-    <system-out><![CDATA[2021-12-02 01:28:53.557  INFO 9640 --- [           main] c.i.d.i.CardProductDaoImpl               : Get all card users 2021-12-02
+    <system-out><![CDATA[2021-12-02 01:32:58.116  INFO 16072 --- [           main] c.i.d.i.CardProductDaoImpl               : Get all card users 2021-12-02
 
 MockHttpServletRequest:
       HTTP Method = GET
@@ -475,18 +475,18 @@ MockHttpServletResponse:
   <testcase name="AdminPanelListUserUpdateTest" classname="com.istg.controller.AdminControllerTest" time="0"/>
   <testcase name="AdminPanelListUserLoadTest" classname="com.istg.controller.AdminControllerTest" time="0.02"/>
   <testcase name="AdminPanelListFeedBackDelete" classname="com.istg.controller.AdminControllerTest" time="0.012"/>
-  <testcase name="AdminPanelListGameCountNode" classname="com.istg.controller.AdminControllerTest" time="0.044"/>
+  <testcase name="AdminPanelListGameCountNode" classname="com.istg.controller.AdminControllerTest" time="0.04"/>
   <testcase name="homeAdminPageLoad" classname="com.istg.controller.AdminControllerTest" time="0.016"/>
-  <testcase name="AdminPanelAddGameFailed" classname="com.istg.controller.AdminControllerTest" time="0.012"/>
+  <testcase name="AdminPanelAddGameFailed" classname="com.istg.controller.AdminControllerTest" time="0.008"/>
   <testcase name="AdminPanelEditGame" classname="com.istg.controller.AdminControllerTest" time="0.008"/>
-  <testcase name="AdminPanelListUserCountNodeTest" classname="com.istg.controller.AdminControllerTest" time="0.016"/>
-  <testcase name="AdminPanelListCheckoutOrder" classname="com.istg.controller.AdminControllerTest" time="0.012"/>
+  <testcase name="AdminPanelListUserCountNodeTest" classname="com.istg.controller.AdminControllerTest" time="0.012"/>
+  <testcase name="AdminPanelListCheckoutOrder" classname="com.istg.controller.AdminControllerTest" time="0.008"/>
   <testcase name="AdminPanelListFeedBackNodeCount" classname="com.istg.controller.AdminControllerTest" time="0.02"/>
-  <testcase name="AdminPanelAddGame" classname="com.istg.controller.AdminControllerTest" time="0.008"/>
-  <testcase name="AdminPanelListContactUsDelete" classname="com.istg.controller.AdminControllerTest" time="0.012"/>
-  <testcase name="AdminPanelListContactUsCountNode" classname="com.istg.controller.AdminControllerTest" time="0.024"/>
+  <testcase name="AdminPanelAddGame" classname="com.istg.controller.AdminControllerTest" time="0.004"/>
+  <testcase name="AdminPanelListContactUsDelete" classname="com.istg.controller.AdminControllerTest" time="0.008"/>
+  <testcase name="AdminPanelListContactUsCountNode" classname="com.istg.controller.AdminControllerTest" time="0.02"/>
   <testcase name="AdminPanelListFeedBackLoad" classname="com.istg.controller.AdminControllerTest" time="0.012"/>
-  <testcase name="AdminPanelListUserDeleteTest" classname="com.istg.controller.AdminControllerTest" time="0.012"/>
-  <testcase name="AdminPanelListGameLoad" classname="com.istg.controller.AdminControllerTest" time="0.012"/>
+  <testcase name="AdminPanelListUserDeleteTest" classname="com.istg.controller.AdminControllerTest" time="0.008"/>
+  <testcase name="AdminPanelListGameLoad" classname="com.istg.controller.AdminControllerTest" time="0.008"/>
   <testcase name="AdminPanelEditGameFailed" classname="com.istg.controller.AdminControllerTest" time="0.004"/>
 </testsuite>

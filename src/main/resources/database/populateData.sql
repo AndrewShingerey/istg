@@ -3,7 +3,7 @@ INSERT INTO Roles
 SELECT 1, 'USER'
     WHERE
     NOT EXISTS (
-        SELECT id FROM roles WHERE id = 1
+        SELECT id FROM roles WHERE id_role = 1
     );
 
 INSERT INTO Roles
@@ -11,7 +11,7 @@ INSERT INTO Roles
 SELECT 2, 'ADMIN'
     WHERE
     NOT EXISTS (
-        SELECT id FROM roles WHERE id = 2
+        SELECT id FROM roles WHERE id_role = 2
     );
 
 INSERT INTO TypeGame
@@ -37,3 +37,5 @@ SELECT 3, 'INTELEGENT'
     NOT EXISTS (
         SELECT id_type FROM TypeGame WHERE id_type = 3
     );
+
+UPDATE Usr SET role_user = 'ADMIN' where id_user=1;
