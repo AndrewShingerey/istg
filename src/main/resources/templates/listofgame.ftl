@@ -122,7 +122,7 @@
                             </div>
                             <div class="form-group">
                                 <div class="custom-file">
-                                    <input type="text" name="file" class="custom-file-input" id="inputGroupFile01"
+                                    <input type="text" name="file" class="form-control" id="inputGroupFile01"
                                            aria-describedby="inputGroupFileAddon01"/>
                                     <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
                                 </div>
@@ -170,7 +170,7 @@
                     <span id="img_res"></span>
                     <img id="image_edit" src="" width="50px" height="50px" style="border-radius: 10px" alt="Edit image"/>
                     <div class="custom-file">
-                        <input type="text" name="file_edit" class="custom-file-input" id="inputGroupFile01"
+                        <input type="text" name="file_edit" class="form-control" id="inputGroupFile01"
                                aria-describedby="inputGroupFileAddon01"/>
                         <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
                     </div>
