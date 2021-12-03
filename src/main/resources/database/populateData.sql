@@ -57,4 +57,4 @@ SELECT 1000,'Chpok (18+)','What is Chpok? This is a mixture of black humor, lech
         SELECT id_game,name_game,describe_game,price,typegame_id,filename_photo FROM table_games WHERE id_game = 1000
     );
 
-UPDATE Usr SET role_user = 'ADMIN' where id_user=1;
+UPDATE Usr SET role_user = 'ADMIN' where username='AndrewAdministrator2020';
