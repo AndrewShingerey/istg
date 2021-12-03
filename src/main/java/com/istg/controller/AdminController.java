@@ -61,13 +61,13 @@ public class AdminController {
                              @RequestParam(name = "describe_game")String describe_game,
                              @RequestParam(name = "price")String price_game,
                              @RequestParam(name="type_id")String type_id,
-                             @RequestParam("file") MultipartFile file) throws IOException {
+                             @RequestParam(name="file") String file) throws IOException {
         TableGames tableGames = new TableGames();
         tableGames.setName_game(name_game);
         tableGames.setDescribe_game(describe_game);
         tableGames.setPrice(Integer.valueOf(price_game));
         tableGames.setType_id(Long.valueOf(type_id));
-        tableGameService.saveFile(tableGames,file);
+        tableGames.setFilename_photo_game(file);
         tableGameService.save(tableGames);
         return "redirect:/admin/listofgame";
     }
@@ -85,7 +85,7 @@ public class AdminController {
                            @RequestParam(name = "describe_game_edit") String describe_game,
                            @RequestParam(name = "price_edit") String price_game,
                            @RequestParam(name = "type_id_edit") String type_id,
-                           @RequestParam("file_edit") MultipartFile file, @PathVariable String id){
+                           @RequestParam("file_edit") String file, @PathVariable String id){
         TableGames tableGames = new TableGames();
         tableGames.setId_game(Long.valueOf(id));
         tableGames.setName_game(name_game);
@@ -93,11 +93,7 @@ public class AdminController {
         tableGames.setPrice(Integer.valueOf(price_game));
         tableGames.setType_id(Long.valueOf(type_id));
         if(!file.isEmpty()){
-            try {
-                tableGameService.saveFile(tableGames,file);
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
+            tableGames.setFilename_photo_game(file);
         }else {
             tableGames.setFilename_photo_game("None");
         }

@@ -38,4 +38,23 @@ SELECT 3, 'INTELEGENT'
         SELECT id_type FROM TypeGame WHERE id_type = 3
     );
 
+insert into table_games
+(id_game,name_game,describe_game,price,typegame_id,filename_photo)
+SELECT 999,'Playing cards ON','The cards were drawn by Velmi Yakasna, jumping and yaўlyayutsa navat, in my opinion, mastatskіm shadeўram. Cardboard davolі tryvali і, padaetstsa, INTO cards pasluzhat doўgі hour. Dzyakuy vyalikі for such argіnalnyy tavar!'
+     ,'321','1','https://s1-goods.ozstatic.by/2000/990/57/101/101057990_0.jpg'
+    WHERE
+    NOT EXISTS (
+        SELECT id_game,name_game,describe_game,price,typegame_id,filename_photo FROM table_games WHERE id_type = 999
+    );
+
+insert into table_games
+(id_game,name_game,describe_game,price,typegame_id,filename_photo)
+SELECT 1000,'Chpok (18+)','What is Chpok? This is a mixture of black humor, lecherous words, vulgar topics and bawdy jokes that your friends will remember for the next year. Alcohol is optional, but it can enhance the pleasure. The main thing is to reject shame and boldly compose the word "ETERNITY" from the letters "F", "O", "P", "A".
+'
+     ,'512','2','https://s1-goods.ozstatic.by/2000/990/57/101/101057990_0.jpg'
+    WHERE
+    NOT EXISTS (
+        SELECT id_game,name_game,describe_game,price,typegame_id,filename_photo FROM table_games WHERE id_type = 1000
+    );
+
 UPDATE Usr SET role_user = 'ADMIN' where id_user=1;
