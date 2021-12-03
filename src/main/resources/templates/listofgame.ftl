@@ -121,11 +121,8 @@
                                 <input name="price" type="text" class="form-control" id="exampleInputPrice1"  placeholder="Enter name game" required="required"/>
                             </div>
                             <div class="form-group">
-                                <div class="custom-file">
-                                    <input type="text" name="file" class="form-control" id="inputGroupFile01"
-                                           aria-describedby="inputGroupFileAddon01"/>
-                                    <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
-                                </div>
+                                <label for="exampleInputText">Url photo game</label>
+                                <input name="file" type="text" class="form-control" id="exampleInputText" placeholder="Enter url photo game" required="required" minlength="8"/>
                             </div>
                             <input type="hidden" name="_csrf" value="${_csrf.token}" />
                             <button type="submit" class="btn btn-primary">Submit</button>
@@ -167,13 +164,8 @@
                     <input name="price_edit" type="text" class="form-control" id="exampleInputPrice1" placeholder="Enter name game" required="required"/>
                 </div>
                 <div class="form-group">
-                    <span id="img_res"></span>
-                    <img id="image_edit" src="" width="50px" height="50px" style="border-radius: 10px" alt="Edit image"/>
-                    <div class="custom-file">
-                        <input type="text" name="file_edit" class="form-control" id="inputGroupFile01"
-                               aria-describedby="inputGroupFileAddon01"/>
-                        <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
-                    </div>
+                    <label for="exampleInputText">Url photo game</label>
+                    <input name="file_edit" type="text" class="form-control" id="exampleInputText" placeholder="Enter photo url" required="required" minlength="8"/>
                 </div>
                 <input type="hidden" name="_csrf" value="${_csrf.token}" />
                 <button type="submit" class="btn btn-primary">Submit</button>
