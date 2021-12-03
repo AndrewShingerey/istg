@@ -64,7 +64,7 @@
         <div class="row">
             <div class="col">
                 <#if game.filename_photo_game??>
-                    <img style="width: 297px;height: 265px;" src="/img/${game.filename_photo_game}"/>
+                    <img style="width: 297px;height: 265px;" src="${game.filename_photo_game}"/>
                     <#else>
                     <img style="width: 297px;height: 265px;" src="/static/img/default_image_game.png"/>
                 </#if>

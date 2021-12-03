@@ -58,7 +58,7 @@
     <property name="sun.cpu.endian" value="little"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="testSummaMoreThen100[0]" classname="com.istg.utils.MassiveUtilsTest" time="0"/>
+  <testcase name="testSummaMoreThen100[0]" classname="com.istg.utils.MassiveUtilsTest" time="0.001"/>
   <testcase name="testSummaMoreThen100[1]" classname="com.istg.utils.MassiveUtilsTest" time="0"/>
   <testcase name="testSummaMoreThen100[2]" classname="com.istg.utils.MassiveUtilsTest" time="0"/>
   <testcase name="testSummaMoreThen100[3]" classname="com.istg.utils.MassiveUtilsTest" time="0"/>

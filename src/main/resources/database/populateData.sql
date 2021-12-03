@@ -44,7 +44,7 @@ SELECT 999,'Playing cards ON','The cards were drawn by Velmi Yakasna, jumping an
      ,'321','1','https://s1-goods.ozstatic.by/2000/990/57/101/101057990_0.jpg'
     WHERE
     NOT EXISTS (
-        SELECT id_game,name_game,describe_game,price,typegame_id,filename_photo FROM table_games WHERE id_type = 999
+        SELECT id_game,name_game,describe_game,price,typegame_id,filename_photo FROM table_games WHERE id_game = 999
     );
 
 insert into table_games
@@ -54,7 +54,7 @@ SELECT 1000,'Chpok (18+)','What is Chpok? This is a mixture of black humor, lech
      ,'512','2','https://s1-goods.ozstatic.by/2000/990/57/101/101057990_0.jpg'
     WHERE
     NOT EXISTS (
-        SELECT id_game,name_game,describe_game,price,typegame_id,filename_photo FROM table_games WHERE id_type = 1000
+        SELECT id_game,name_game,describe_game,price,typegame_id,filename_photo FROM table_games WHERE id_game = 1000
     );
 
 UPDATE Usr SET role_user = 'ADMIN' where id_user=1;

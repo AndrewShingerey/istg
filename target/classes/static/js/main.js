@@ -15,7 +15,7 @@ function init_edit_modal_game() {
             $('input[name=price_edit]').val(this.dataset.price_game);
             if(this.dataset.getFilename_photo_game!=="None") {
                 $("img[id=image_edit]").css("display","block")
-                $("img[id=image_edit]").attr("src", "/img/"+this.dataset.filename_photo);
+                $("img[id=image_edit]").attr("src", this.dataset.filename_photo);
             }else{
                 $('span[id=img_res]').text("None");
                 $("img[id=image_edit]").css("display","none")

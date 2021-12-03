@@ -65,7 +65,7 @@
             <div id="card_item" class="col-xs-12 col-sm-6 col-md-12 col-lg-4">
                 <div class="card" style="width: 16rem;margin-bottom: 40px;">
                     <#if game.filename_photo_game??>
-                    <img class="card-img-top" height="200px" src="/img/${game.filename_photo_game}" alt="Card image cap"/>
+                    <img class="card-img-top" height="200px" src="${game.filename_photo_game}" alt="Card image cap"/>
                     <#else>
                     <img class="card-img-top" height="200px" src="/static/img/default_image_game.png" alt="Card image cap"/>
                     </#if>

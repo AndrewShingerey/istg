@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.istg.controller.HomeControllerTest
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.229 sec - in com.istg.controller.HomeControllerTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.205 sec - in com.istg.controller.HomeControllerTest

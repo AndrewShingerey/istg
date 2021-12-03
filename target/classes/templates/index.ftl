@@ -154,7 +154,7 @@
                                         <div  class="col-md-4 mb-3">
                                             <div class="card">
                                                 <#if game.filename_photo_game??>
-                                                 <img class="img-fluid" alt="100%x280" src="/img/${game.filename_photo_game}">
+                                                 <img class="img-fluid" alt="100%x280" src="${game.filename_photo_game}">
                                                  <#else>
                                                  <img class="img-fluid" alt="100%x280" src="/static/img/default_image_game.png">
                                                 </#if>
@@ -179,7 +179,7 @@
                                         <div  class="col-md-4 mb-3">
                                             <div class="card">
                                                 <#if game.filename_photo_game??>
-                                                    <img class="img-fluid" alt="100%x280" src="/img/${game.filename_photo_game}">
+                                                    <img class="img-fluid" alt="100%x280" src="${game.filename_photo_game}">
                                                 <#else>
                                                     <img class="img-fluid" alt="100%x280" src="/static/img/default_image_game.png">
                                                 </#if>
@@ -204,7 +204,7 @@
                                         <div  class="col-md-4 mb-3">
                                             <div class="card">
                                                 <#if game.filename_photo_game??>
-                                                    <img class="img-fluid" alt="100%x280" src="/img/${game.filename_photo_game}">
+                                                    <img class="img-fluid" alt="100%x280" src="${game.filename_photo_game}">
                                                 <#else>
                                                     <img class="img-fluid" alt="100%x280" src="/static/img/default_image_game.png">
                                                 </#if>
